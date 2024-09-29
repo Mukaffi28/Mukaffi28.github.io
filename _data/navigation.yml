@@ -1,0 +1,25 @@
+# main links links
+main:
+  - title: "Home"
+    url: /
+  
+  - title: "News"
+    url: /news/
+    
+  - title: "Research"
+    url: /research/
+    
+  - title: "Publications"
+    url: /publications/  
+
+  - title: "Work Experience"
+    url: /work/   
+
+  - title: "Datasets"
+    url: /datasets/    
+    
+  - title: "Education"
+    url: /education/
+    
+  - title: "CV"
+    url: /cv/
