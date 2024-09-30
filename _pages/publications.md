@@ -111,7 +111,39 @@ author_profile: true
 
 
 
+<!-- Paper 06 -->
+📌 [<span style="color:blue;font-family:Trebuchet MS;">**Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation**</span>](https://arxiv.org/abs/2409.17130)<br>
+<span style="color:black;font-family:Georgia">
+	<font size="3"><strong>Authors</strong>: <strong style="color:green">Mukaffi Bin Moin</strong>, Pronay Debnath, Usafa Akther Rifa, Rijeet Bin Anis</font>
+</span>
+<br>
+<span style="color:black;font-family:Georgia">
+	<font size="3"><strong>Conference:</strong><em> 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
+</span>
+<br>
+[<a style="color:red;" href="#" onclick="$('#Toxic2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2409.17130)] [<a style="color:red;" href="#" onclick="$('#Toxic2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
 
+<div id="Toxic2024_bib" class="bib" style="display:none;">
+	<pre>
+	  @misc{moin2024assessingleveltoxicitydistinct,
+      		title={Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation}, 
+     		author={Mukaffi Bin Moin and Pronay Debnath and Usafa Akther Rifa and Rijeet Bin Anis},
+      		year={2024},
+      		eprint={2409.17130},
+      		archivePrefix={arXiv},
+      		primaryClass={cs.CL},
+      		url={https://arxiv.org/abs/2409.17130}, 
+		}
+	</pre>
+</div>
+
+<div id="Toxic2024_abstract" class="abstract" style="display:none;">
+	<p style="text-align:justify; color:black;font-family:Monaco;"> 
+		<font size="3">
+			Social media platforms have a vital role in the modern world, serving as conduits for communication, the exchange of ideas, and the establishment of networks. However, the misuse of these platforms through toxic comments, which can range from offensive remarks to hate speech, is a concerning issue. This study focuses on identifying toxic comments in the Bengali language targeting three specific groups: transgender people, indigenous people, and migrant people, from multiple social media sources. The study delves into the intricate process of identifying and categorizing toxic language while considering the varying degrees of toxicity: high, medium, and low. The methodology involves creating a dataset, manual annotation, and employing pre-trained transformer models like Bangla-BERT, bangla-bert-base, distil-BERT, and Bert-base-multilingual-cased for classification. Diverse assessment metrics such as accuracy, recall, precision, and F1-score are employed to evaluate the model's effectiveness. The experimental findings reveal that Bangla-BERT surpasses alternative models, achieving an F1-score of 0.8903. This research exposes the complexity of toxicity in Bangla social media dialogues, revealing its differing impacts on diverse demographic groups.
+		</font>
+	</p>
+</div>
 
 
 
