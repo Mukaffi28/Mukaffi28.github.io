@@ -20,8 +20,8 @@ author_profile: true
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[April]</span> -  Our paper [Bengali Fake Reviews](https://www.sciencedirect.com/science/article/abs/pii/S0925231224005034) published in [Neurocomputing](https://www.sciencedirect.com/journal/neurocomputing)! <span style="color:red;">[Elsevier Q1 journal]</span></span>
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[January]</span> - [Noise Reduction Methods on Noisy Bengali Texts](https://arxiv.org/pdf/2401.14360.pdf) got accepted in [W-NUT 2024](https://noisy-text.github.io/2024/) collocated with [EACL 2024](https://2024.eacl.org/)! <span style="color:red;">[Core A conference]</span></span> -->
 
-# 2023
-
+# 2023 
++ <span style="font-family:Monaco; color:black;"><span style="color:brown">[December]</span> - Graduated from “Ahsanullah University of Science and Technology” [AUST](https://aust.edu/) </span>
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[November]</span> - Defended undergraduate thesis on "Generative Adversarial Networks for Crop Disease: A Case Study with Potato Disease Classification and Instance Segmentation" </span>
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[August]</span> -  Secured 7<sup>th</sup> poistion at DL Sprint 2.0 - BUET CSE Fest 2023. [DL Sprint 2.0](https://www.kaggle.com/competitions/dlsprint2/discussion/433389)</span>
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[July]</span> - Participate in DL Sprint 2.0 - BUET CSE Fest 2023. [DL Sprint 2.0](https://www.kaggle.com/competitions/dlsprint2/overview)  </span>
