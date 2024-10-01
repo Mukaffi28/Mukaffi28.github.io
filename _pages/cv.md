@@ -13,7 +13,7 @@ redirect_from:
 <br>
 
 ## Email
-+ <span style="font-family:Georgia; color:black;">mukaffi28[AT]gmail[DOT]com</span><br/>
++ <span style="font-family:Georgia; color:black;">mukaffi28@gmail.com</span><br/>
 
 
 ## Social Media
