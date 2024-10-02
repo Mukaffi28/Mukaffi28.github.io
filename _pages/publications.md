@@ -179,21 +179,12 @@ author_profile: true
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
 	</pre>
-	<button onclick="copyBibText()" style="position: absolute; top: 0px; right: 0px; background-color: #FF6B6B; color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s ease;">
+	<button onclick="copyBibText()" style="position: absolute; top: 0px; right: 0px; background-color: #FF6B6B; color: white; border: none; padding: 4px 8px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s ease;">
         Copy
     </button>
 </div>
 
 <script>
-function copyBibText() {
-  var bibText = document.getElementById("bibtext").innerText;
-  navigator.clipboard.writeText(bibText).then(function() {
-    alert("BibTeX copied to clipboard!");
-  }, function() {
-    alert("Failed to copy BibTeX.");
-  });
-}
-
 // Add hover effect for the button
 document.querySelector('button').addEventListener('mouseover', function() {
     this.style.backgroundColor = '#FF3B3B';
@@ -202,6 +193,14 @@ document.querySelector('button').addEventListener('mouseover', function() {
 document.querySelector('button').addEventListener('mouseout', function() {
     this.style.backgroundColor = '#FF6B6B';
 });
+function copyBibText() {
+  var bibText = document.getElementById("bibtext").innerText;
+  navigator.clipboard.writeText(bibText).then(function() {
+    alert("BibTeX copied to clipboard!");
+  }, function() {
+    alert("Failed to copy BibTeX.");
+  });
+}
 </script>
 
 
