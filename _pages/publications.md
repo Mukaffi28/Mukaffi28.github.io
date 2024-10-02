@@ -161,11 +161,15 @@ author_profile: true
 	<font size="3"><strong>Conference:</strong><em> 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
 </span>
 <br>
-[<a style="color:red;" href="#" onclick="$('#Uddessho2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2409.09504)] [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/Uddessho-An-Benchmark-Dataset-for-Multimodal-Author-Intent-Classification-in-Bangla-Language)] [[<span style ="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/mzxmt8tfjs/1)] [<a style="color:red;" href="#" onclick="$('#Uddessho2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
+[<a style="color:red;" href="#" onclick="$('#Uddessho2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] 
+[[<span style="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2409.09504)] 
+[[<span style="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/Uddessho-An-Benchmark-Dataset-for-Multimodal-Author-Intent-Classification-in-Bangla-Language)] 
+[[<span style="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/mzxmt8tfjs/1)] 
+[<a style="color:red;" href="#" onclick="$('#Uddessho2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>]
 
 <div id="Uddessho2024_bib" class="bib" style="display:none;">
-	<pre>
-	```bibtex
+	<pre id="bibtext">
+
 	  @misc{faria2024uddesshoextensivebenchmarkdataset,
       		title={Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language}, 
       		author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Md. Mahfuzur Rahman and Md Morshed Alam Shanto and Asif Iftekher Fahim and Md. Moinul Hoque},
@@ -175,8 +179,22 @@ author_profile: true
       		primaryClass={cs.CL},
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
+
 	</pre>
+	<button onclick="copyBibText()">Copy</button>
 </div>
+
+<script>
+function copyBibText() {
+  var bibText = document.getElementById("bibtext").innerText;
+  navigator.clipboard.writeText(bibText).then(function() {
+    alert("BibTeX copied to clipboard!");
+  }, function() {
+    alert("Failed to copy BibTeX.");
+  });
+}
+</script>
+
 
 <div id="Uddessho2024_abstract" class="abstract" style="display:none;">
 	<p style="text-align:justify; color:black;font-family:Monaco;"> 
