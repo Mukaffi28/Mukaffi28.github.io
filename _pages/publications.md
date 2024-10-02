@@ -179,20 +179,12 @@ author_profile: true
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
 	</pre>
-	<button onclick="copyBibText()" style="position: absolute; top: 0px; right: 0px; background-color: #FF6B6B; color: white; border: none; padding: 4px 8px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s ease;">
+	<button id="copyButton" onclick="copyBibText()" style="position: absolute; top: 10px; right: 10px; background-color: #FF6B6B; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s ease;">
         Copy
     </button>
 </div>
 
 <script>
-// Add hover effect for the button
-document.querySelector('button').addEventListener('mouseover', function() {
-    this.style.backgroundColor = '#FF3B3B';
-});
-
-document.querySelector('button').addEventListener('mouseout', function() {
-    this.style.backgroundColor = '#FF6B6B';
-});
 function copyBibText() {
   var bibText = document.getElementById("bibtext").innerText;
   navigator.clipboard.writeText(bibText).then(function() {
@@ -201,7 +193,19 @@ function copyBibText() {
     alert("Failed to copy BibTeX.");
   });
 }
+
+// Add hover effect for the specific button
+var copyButton = document.getElementById('copyButton');
+
+copyButton.addEventListener('mouseover', function() {
+    this.style.backgroundColor = '#FF3B3B';
+});
+
+copyButton.addEventListener('mouseout', function() {
+    this.style.backgroundColor = '#FF6B6B';
+});
 </script>
+
 
 
 
