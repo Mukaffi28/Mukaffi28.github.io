@@ -165,6 +165,7 @@ author_profile: true
 
 <div id="Uddessho2024_bib" class="bib" style="display:none;">
 	<pre>
+	```bibtex
 	  @misc{faria2024uddesshoextensivebenchmarkdataset,
       		title={Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language}, 
       		author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Md. Mahfuzur Rahman and Md Morshed Alam Shanto and Asif Iftekher Fahim and Md. Moinul Hoque},
