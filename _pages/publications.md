@@ -183,7 +183,7 @@ author_profile: true
         Copy
     </button>
 </div>
-
+<!--  
 <script>
 function copyBibText() {
   var bibText = document.getElementById("bibtext").innerText;
@@ -193,8 +193,9 @@ function copyBibText() {
     alert("Failed to copy BibTeX.");
   });
 }
+-->
 
-// Add hover effect for the specific button
+<!--  // Add hover effect for the specific button
 var copyButton = document.getElementById('copyButton');
 
 copyButton.addEventListener('mouseover', function() {
@@ -204,7 +205,7 @@ copyButton.addEventListener('mouseover', function() {
 copyButton.addEventListener('mouseout', function() {
     this.style.backgroundColor = '#FF6B6B';
 });
-</script>
+</script> -->
 
 
 
