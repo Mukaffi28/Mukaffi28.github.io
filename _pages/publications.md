@@ -179,7 +179,7 @@ author_profile: true
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
 	</pre>
-	<button onclick="copyBibText()" style="position: absolute;">Copy</button>
+	<button onclick="copyBibText()" style="position: absolute; top: 0px; right: 0px;">Copy</button>
 </div>
 
 <script>
