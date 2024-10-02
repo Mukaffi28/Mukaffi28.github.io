@@ -168,7 +168,6 @@ author_profile: true
 [<a style="color:red;" href="#" onclick="$('#Uddessho2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>]
 
 <div id="Uddessho2024_bib" class="bib" style="display:none; position: relative;">
-<button onclick="copyBibText()" style="position: absolute;">Copy</button>
 	<pre id="bibtext" style="position: relative; padding-right: 50px;">
 	  @misc{faria2024uddesshoextensivebenchmarkdataset,
       		title={Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language}, 
@@ -180,7 +179,7 @@ author_profile: true
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
 	</pre>
-	
+	<button onclick="copyBibText()" style="position: absolute;">Copy</button>
 </div>
 
 <script>
