@@ -167,9 +167,8 @@ author_profile: true
 [[<span style="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/mzxmt8tfjs/1)] 
 [<a style="color:red;" href="#" onclick="$('#Uddessho2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>]
 
-<div id="Uddessho2024_bib" class="bib" style="display:none;">
-	<pre id="bibtext">
-
+<div id="Uddessho2024_bib" class="bib" style="display:none; position: relative;">
+	<pre id="bibtext" style="position: relative; padding-right: 50px;">
 	  @misc{faria2024uddesshoextensivebenchmarkdataset,
       		title={Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language}, 
       		author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Md. Mahfuzur Rahman and Md Morshed Alam Shanto and Asif Iftekher Fahim and Md. Moinul Hoque},
@@ -179,9 +178,8 @@ author_profile: true
       		primaryClass={cs.CL},
       		url={https://arxiv.org/abs/2409.09504}, 
 		}
-
 	</pre>
-	<button onclick="copyBibText()">Copy</button>
+	<button onclick="copyBibText()" style="position: absolute; top: 10px; right: 10px;">Copy</button>
 </div>
 
 <script>
@@ -194,6 +192,7 @@ function copyBibText() {
   });
 }
 </script>
+
 
 
 <div id="Uddessho2024_abstract" class="abstract" style="display:none;">
