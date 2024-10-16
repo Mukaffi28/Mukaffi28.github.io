@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:black; font-family:Georgia">Greetings! 👽</span>
+<span style="color:black; font-family:Georgia">Greetings!</span>
 
 <!-- <p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin (<button onclick="playMusic()" style='font-size:16px'>pronounce <i class='fas fa-volume-up'></i></button>), currently working as 
 a <a href="https://aust.edu/cse/faculty_member/mr_g_m_shahariar">Lecturer (Grade-I)</a> at the Department of CSE, 
