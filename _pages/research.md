@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 <p style="text-align:justify; color:black; font-family:Georgia">
-My research delves into the realms of 
+My research explores various areas, including Medical Image Analysis, Explainable Artificial Intelligence, Computer Vision, Generative Adversarial Networks, Multimodal Deep Learning, Large Language Models, Natural Language Processing, Machine Learning, and the applications of Deep Learning.
 </p> 
 
 ## 1. Explainable AI in Medical Image Analysis
@@ -50,9 +50,7 @@ Sentiment analysis categorizes emotions in text as positive, negative, or neutra
 
 ## 4. Natural Language Inference 
 <p style="text-align:justify; color:black; font-family:Georgia"> 
-
-Natural Language Inference (NLI) is an important task in natural language processing (NLP) that examines the relationship between two sentences to determine if one sentence (the premise) supports, contradicts, or is unrelated to another sentence (the hypothesis). This capability is crucial for various applications such as answering questions, retrieving information, and creating chatbots, as it enhances computers' understanding of human language. NLI consists of three main categories: entailment, where the truth of the hypothesis can be inferred from the premise; contradiction, where both cannot be true simultaneously; and neutral, where the hypothesis's truth is independent of the premise. Understanding NLI is particularly vital for languages like Bangla, which differ significantly from more widely studied languages like English, as it can improve how NLP models process and interpret Bangla text. With the rise of digital communication, there is an increasing demand for technologies that comprehend Bangla, and NLI can enhance chatbots, virtual assistants, and translation services to better understand user queries and respond accurately. Large Language Models (LLMs) are trained on extensive amounts of text data, enabling them to learn various language patterns and meanings, which is especially beneficial for NLI where understanding subtle connections between sentences is key. Moreover, LLMs can be fine-tuned for specific tasks like NLI with smaller datasets, making them adaptable for use in scenarios where creating large labeled datasets is challenging.
-
+Natural Language Inference (NLI) is a crucial NLP task that determines whether a premise supports, contradicts, or is unrelated to a hypothesis, aiding applications like question answering, information retrieval, and chatbots. NLI has three categories: entailment (the hypothesis follows from the premise), contradiction (both cannot be true), and neutral (the hypothesis is independent of the premise). It is especially important for languages like Bangla, improving NLP models' ability to interpret Bangla text and meet the growing demand for tools like chatbots and virtual assistants. Large Language Models (LLMs) enhance NLI by learning subtle sentence relationships and can be fine-tuned for specific tasks, making them effective even with limited labeled data.
 </p>  
 
 ### Related Paper:
