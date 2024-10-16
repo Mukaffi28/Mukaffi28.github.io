@@ -15,7 +15,7 @@ a <a href="https://aust.edu/cse/faculty_member/mr_g_m_shahariar">Lecturer (Grade
 <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>. I obtained my Bachelor's degree in Computer Science and 
 Engineering from the same university. My career aspiration is to work in leading AI research laboratories. I am an incoming Ph.D. student in Fall 2024. More information soon!
 </p> -->
-<p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin, currently working as a Machine Learning Engineer (Level-I) at <a href="https://www.linkedin.com/company/anttroboticsltd/">ANTT Robotics Ltd</a>. I obtained my Bachelor's degree in Computer Science and Engineering from the <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>. My career aspiration is to work in leading AI research laboratories.
+<p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin, currently working as a Machine Learning Engineer (Level-I) at <a href="https://www.linkedin.com/company/anttroboticsltd/">ANTT Robotics Ltd</a>. I obtained my Bachelor's degree in Computer Science and Engineering from the <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>.
 </p>
 
 
