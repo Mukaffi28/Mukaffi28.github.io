@@ -10,17 +10,6 @@ author_profile: true
 
 ## 2024
 --------- 
-<!-- Paper 11 -->
-<!-- 📌 <span style="color:blue;font-family:Trebuchet MS;">**Investigating the Predominance of Large Language Models in Low-Resource Bangla Language Over Transformer Models for Hate Speech Detection: A Comparative Analysis**</span><br>
-<span style="color:black;font-family:Georgia"> 
-	<font size="3"><strong>Authors</strong>: Fatema Tuj Johora Faria, Laith H. Baniata, Hayder Albayati, Mohammad H. Baniata, Majdi Alsaaideh, Mohannad A. Khair, and Sangwoo Kang</font>
-</span>
-<br>
-<span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Journal:</strong><em> Under Review in MDPI Electronics </em></font>  ([Electronics](https://www.mdpi.com/journal/electronics))
-</span>
-<br> -->
-<!-- [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/MultiBanFakeDetect-An-Extensive-Benchmark-Dataset-for-Multimodal-Bangla-Fake-News-Detection)] [[<span style ="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/k5pbz9795f/1)] -->
 
 <!-- Paper 10 -->
 📌 <span style="color:blue;font-family:Trebuchet MS;">**MultiBanFakeDetect: Integrating Advanced Fusion Techniques for Multimodal Detection of Bangla Fake News in Under-Resourced Contexts** </span> (<span style="color:red"><strong>Q1</strong></span>)<br>
@@ -29,7 +18,7 @@ author_profile: true
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Journal:</strong><em> Under Review in Engineering Applications of Artificial Intelligence </em></font>  ([Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence))
+	<font size="3"><strong>Journal:</strong><em> Under Review in Neurocomputing </em></font>  ([Neurocomputing](https://www.sciencedirect.com/journal/neurocomputing/))
 </span>
 <br>
 [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/MultiBanFakeDetect-An-Extensive-Benchmark-Dataset-for-Multimodal-Bangla-Fake-News-Detection)] [[<span style ="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/k5pbz9795f/1)]
@@ -118,7 +107,7 @@ author_profile: true
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em> 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
+	<font size="3"><strong>Conference:</strong><em>Presented in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#Toxic2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2409.17130)] [<a style="color:red;" href="#" onclick="$('#Toxic2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
@@ -158,7 +147,7 @@ author_profile: true
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em> 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
+	<font size="3"><strong>Conference:</strong><em>Presented in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#Uddessho2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] 
@@ -226,7 +215,7 @@ copyButton.addEventListener('mouseout', function() {
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em> The IEEE Region 10 Symposium (TENSYMP 2024) </em></font> ([TENSYMP 2024](https://ieeedelhi-tensymp2024.org/))
+	<font size="3"><strong>Conference:</strong><em>Presented in The IEEE Region 10 Symposium (TENSYMP 2024) </em></font> ([TENSYMP 2024](https://ieeedelhi-tensymp2024.org/))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#Motamot2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2407.19528)] [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/Mukaffi28/Bengali-Political-Sentiment-Analysis)] [[<span style ="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/hdhnrrwdz2/1)] [<a style="color:red;" href="#" onclick="$('#Motamot2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
@@ -332,7 +321,7 @@ copyButton.addEventListener('mouseout', function() {
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em> 4th International Conference on Computing and Communication Networks (ICCCNet-2024)  </em></font> ([ICCCNet 2024](https://icccn.co.uk/))
+	<font size="3"><strong>Conference:</strong><em>Presented in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)  </em></font> ([ICCCNet 2024](https://icccn.co.uk/))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#NLI2023_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2405.02937)] [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/Large-Language-Models-Over-Transformer-Models-for-Bangla-NLI)] [<a style="color:red;" href="#" onclick="$('#NLI2023_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
@@ -366,7 +355,7 @@ copyButton.addEventListener('mouseout', function() {
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em> 4th International Conference on Computing and Communication Networks (ICCCNet-2024)  </em></font> ([ICCCNet 2024](https://icccn.co.uk/))
+	<font size="3"><strong>Conference:</strong><em>Presented in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)  </em></font> ([ICCCNet 2024](https://icccn.co.uk/))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#lung2023_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2405.04610)] [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/Mukaffi28/Explainable-AI-for-Lung-and-Colon-Cancer-Classification)][<a style="color:red;" href="#" onclick="$('#lung2023_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 

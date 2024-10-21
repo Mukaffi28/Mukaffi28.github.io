@@ -15,7 +15,7 @@ Medical image analysis plays a important role in diagnosing and treating disease
 </p>  
 
 ### Related Paper:
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Exploring Explainable AI Techniques for Improved Interpretability in Lung and Colon Cancer Classification</span>. Mukaffi Bin Moin, Fatema Tuj Johora Faria, Swarnajit Saha, Busra Kamal Rafa, Mohammad Shafiul Alam. <span style="color:green;"><em>Accepted in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2405.04610)</span>  
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Exploring Explainable AI Techniques for Improved Interpretability in Lung and Colon Cancer Classification</span>. Mukaffi Bin Moin, Fatema Tuj Johora Faria, Swarnajit Saha, Busra Kamal Rafa, Mohammad Shafiul Alam. <span style="color:green;"><em>Presented  in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2405.04610)</span>  
 + <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Pronay Debnath, Asif Iftekher Fahim, Faisal Muhammad Shah. <span style="color:green;"><em> Under Review in Journal of Visual Communication and Image Representation</em></span>. [[PDF]](https://arxiv.org/pdf/2405.07338)</span>   
 
 ## 2. Multimodal Deep Learning
@@ -25,7 +25,7 @@ Multimodal deep learning improves understanding by combining images and text usi
 </p>  
 
 ### Related Paper:
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Md. Mahfuzur Rahman, Md Morshed Alam Shanto, Asif Iftekher Fahim and Md. Moinul Hoque. <span style="color:green;"><em> Accepted in 18th International Conference on Information Technology and Applications (ICITA 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2409.09504)</span>   
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Md. Mahfuzur Rahman, Md Morshed Alam Shanto, Asif Iftekher Fahim and Md. Moinul Hoque. <span style="color:green;"><em> Presented  in 18th International Conference on Information Technology and Applications (ICITA 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2409.09504)</span>   
 
 + <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">BanglaCalamityMMD: A Comprehensive Benchmark Dataset
 for Multimodal Disaster Identification in the Low-Resource Bangla Language
@@ -46,7 +46,7 @@ Sentiment analysis categorizes emotions in text as positive, negative, or neutra
 ### Related Paper:
 + <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Motamot: A Dataset for Revealing the Supremacy of Large Language Models over Transformer Models in Bengali Political Sentiment Analysis</span>. Fatema Tuj Johora Faria<b>*</b>, Mukaffi Bin Moin<b>*</b>, Rabeya Islam Mumu, Md Mahabubul Alam Abir, Abrar Nawar Alfy and Mohammad Shafiul Alam <span style="color:green;"><em> Presented in The IEEE Region 10 Symposium (TENSYMP 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2407.19528)</span>   
 
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation </span>. Mukaffi Bin Moin, Pronay Debnath, Usafa Akther Rifa, Rijeet Bin Anis. <span style="color:green;"><em> Accepted in 18th International Conference on Information Technology and Applications (ICITA 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2409.17130)</span>  
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation </span>. Mukaffi Bin Moin, Pronay Debnath, Usafa Akther Rifa, Rijeet Bin Anis. <span style="color:green;"><em> Presented  in 18th International Conference on Information Technology and Applications (ICITA 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2409.17130)</span>  
 
 ## 4. Natural Language Inference 
 <p style="text-align:justify; color:black; font-family:Georgia"> 
@@ -54,7 +54,7 @@ Natural Language Inference (NLI) is a crucial NLP task that determines whether a
 </p>  
 
 ### Related Paper:
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Unraveling the Dominance of Large Language Models Over Transformer Models for Bangla Natural Language Inference: A Comprehensive Study</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Asif Iftekher Fahim, Pronay Debnath, Faisal Muhammad Shah <span style="color:green;"><em> Accepted in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2405.02937)</span>   
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Unraveling the Dominance of Large Language Models Over Transformer Models for Bangla Natural Language Inference: A Comprehensive Study</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Asif Iftekher Fahim, Pronay Debnath, Faisal Muhammad Shah <span style="color:green;"><em> Presented in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2405.02937)</span>   
 
 ## 5. Text Generation in Bengali
 
