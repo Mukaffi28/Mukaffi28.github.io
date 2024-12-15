@@ -42,22 +42,31 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[March]</span> -  Joined as an Machine Learning Engineer (Level-I) at [ANTT Robotics Ltd.](https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all)
 
 <style>
-  #globe-container {
-    width: 300px; /* Adjust the width */
-    height: 300px; /* Adjust the height */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;     /* Centers content vertically (if needed) */
-    overflow: hidden; /* Ensures no overflow */
-  }
-  iframe, img {
-    width: 100%;
-    height: auto;
-  }
+ .container {
+  display: flex;
+  justify-content: space-between; /* Centers the globe in the middle */
+  align-items: center; /* Vertically centers the content */
+  height: 100vh; /* Full viewport height */
+}
+
+.empty-div {
+  flex: 1; /* Ensures the empty divs take equal space */
+}
+
+#globe-container {
+  flex: 2; /* Make sure the globe container takes more space in the center */
+}
+
 </style>
 
-<div id="globe-container">
-  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
+<div class="container">
+  <div class="empty-div"></div>
+  <div id="globe-container">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
+  </div>
+  <div class="empty-div"></div>
 </div>
+
 
 <!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a95fqlak4h&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script> -->
 
