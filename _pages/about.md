@@ -41,8 +41,8 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[May]</span> -  Two paper got accepted at 4th International Conference on Computing and Communication Networks ([ICCCNet 2024](https://icccn.co.uk/)). 
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[March]</span> -  Joined as an Machine Learning Engineer (Level-I) at [ANTT Robotics Ltd.](https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all)
 
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a95fqlak4h&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
+<!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a95fqlak4h&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script> -->
 
 
 
