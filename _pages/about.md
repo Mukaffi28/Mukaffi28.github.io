@@ -59,11 +59,11 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
     justify-content: center; /* Centers content horizontally */
     align-items: center;     /* Centers content vertically (if needed) */
     margin-top: 20px;
-    height: auto; /* Set desired height */
+    height: 300px; /* Set desired height */
   }
   .globe-container img {
     width: 300px; /* Adjust image width as required */
-    height: auto;
+    height: 300px;
   }
 </style>
 
