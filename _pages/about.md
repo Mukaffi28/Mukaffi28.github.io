@@ -54,7 +54,8 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
 }
 
 #globe-container {
-  flex: 2; /* Make sure the globe container takes more space in the center */
+    width: 300px; /* Adjust the width */
+    height: 300px; /* Adjust the height */
 }
 
 </style>
