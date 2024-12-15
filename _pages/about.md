@@ -41,36 +41,19 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[May]</span> -  Two paper got accepted at 4th International Conference on Computing and Communication Networks ([ICCCNet 2024](https://icccn.co.uk/)). 
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[March]</span> -  Joined as an Machine Learning Engineer (Level-I) at [ANTT Robotics Ltd.](https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all)
 
-<!-- <style>
+<style>
   #globe-container {
     width: 300px; /* Adjust the width */
     height: 300px; /* Adjust the height */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically (if needed) */
     overflow: hidden; /* Ensures no overflow */
   }
   iframe, img {
     width: 100%;
     height: auto;
   }
-</style> -->
-
-<style>
-  .globe-container {
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;     /* Centers content vertically (if needed) */
-    margin-top: 20px;
-    height: 300px; /* Set desired height */
-  }
-  .globe-container img {
-    width: 300px; /* Adjust image width as required */
-    height: 300px;
-  }
 </style>
-
-<!-- <div class="globe-container">
-  <img src="your-globe-image.png" alt="Centered Globe" />
-</div> -->
-
 
 <div id="globe-container">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
