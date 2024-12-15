@@ -46,7 +46,7 @@ My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Lea
   display: flex;
   justify-content: space-between; /* Centers the globe in the middle */
   align-items: center; /* Vertically centers the content */
-  height: 100vh; /* Full viewport height */
+  height: 300px; /* Full viewport height */
 }
 
 .empty-div {
