@@ -27,12 +27,11 @@ Multimodal deep learning improves understanding by combining images and text usi
 ### Related Paper:
 + <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Md. Mahfuzur Rahman, Md Morshed Alam Shanto, Asif Iftekher Fahim and Md. Moinul Hoque. <span style="color:green;"><em> Presented  in 18th International Conference on Information Technology and Applications (ICITA 2024)</em></span>. [[PDF]](https://arxiv.org/pdf/2409.09504)</span>   
 
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">BanglaCalamityMMD: A Comprehensive Benchmark Dataset
-for Multimodal Disaster Identification in the Low-Resource Bangla Language
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">BanglaCalamityMMD: A Comprehensive Benchmark Dataset for Multimodal Disaster Identification in the Low-Resource Bangla Language
 </span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Busra Kamal Rafa, Swarnajit Saha, Md. Mahfuzur Rahman, Khan Md Hasib, and M. F. Mridha. <span style="color:green;"><em> Under Review in International Journal of Disaster Risk Reduction</em></span>.</span>  
 
 
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">MultiBanFakeDetect: Integrating Advanced Fusion Techniques for Multimodal Detection of Bangla Fake News in Under-Resourced Contexts </span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Md Arafat Alam Khandaker, Niful Islam, Khan Md Hasib, Md Saddam Hossain Mukta, and M. F. Mridha. <span style="color:green;"><em> Under Review in Engineering Applications of Artificial Intelligence</em></span>.</span>  
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">MultiBanFakeDetect: Integrating Advanced Fusion Techniques for Multimodal Detection of Bangla Fake News in Under-Resourced Contexts </span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Md Arafat Alam Khandaker, Niful Islam, Khan Md Hasib, Md Saddam Hossain Mukta, and M. F. Mridha. <span style="color:green;"><em> Under Review in International Journal of Information Management Data Insights </em></span>.</span>  
 
 
 + <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00">BanglaMemeEvidence: A Multimodal Benchmark Dataset for Explanatory Evidence Detection in Bengali Memes</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Asif Iftekher Fahim, Pronay Debnath, and Faisal Muhammad Shah. <span style="color:green;"><em> Submitted to an A* Rank Conference</em></span>.</span>  
@@ -95,7 +94,7 @@ Machine Translation (MT) in natural language processing (NLP) helps automaticall
 </p>  
 
 ### Related Paper:
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad. <span style="color:green;"><em> Under Review in Natural Language Processing Journal</em></span>. [[PDF]](https://arxiv.org/pdf/2311.11142)</span>  
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language</span>. Fatema Tuj Johora Faria, Mukaffi Bin Moin, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad. <span style="color:green;"><em> Under Review in Neural Computing and Applications </em></span>. [[PDF]](https://arxiv.org/pdf/2311.11142)</span>  
 
 
 ## 9. Generative Adversarial Networks in Agriculture
@@ -105,7 +104,7 @@ Generative Adversarial Networks (GANs) have transformed machine learning, partic
 </p>  
 
 ### Related Paper:
-+ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification</span>. Mohammad Shafiul Alam<b>*</b>, Fatema Tuj Johora Faria<b>*</b>, Mukaffi Bin Moin<b>*</b>, Ahmed Al Wase, Md. Rabius Sani and Khan Md Hasib. <span style="color:green;"><em> Under Review in Pattern Recognition and Image Analysis</em></span>. [[PDF]](https://arxiv.org/pdf/2405.07332)</span>   
++ <span style="font-family:Trebuchet MS; color:black;"><span style="color:#6E2C00"> PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification</span>. Mohammad Shafiul Alam<b>*</b>, Fatema Tuj Johora Faria<b>*</b>, Mukaffi Bin Moin<b>*</b>, Ahmed Al Wase, Md. Rabius Sani and Khan Md Hasib. <span style="color:green;"><em> Under Review in Journal of Intelligent Information Systems </em></span>. [[PDF]](https://arxiv.org/pdf/2405.07332)</span>   
 
 
 ## 10. Computer Vision Applications in Agriculture
