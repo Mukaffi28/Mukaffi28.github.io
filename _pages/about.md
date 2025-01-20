@@ -30,7 +30,11 @@ Additionally, I have applied natural language processing in specific <em>softwar
 <!-- My research focuses on <em>Medical Image Analysis</em>, <em>Computer Vision</em>, and the application of <em>Generative Adversarial Networks (GANs)</em> and <em>Multimodal Deep Learning</em>. I have also worked extensively with <em>Natural Language Processing (NLP)</em>, particularly in areas like <em>Natural Language Generation</em> and the use of <em>Large Language Models (LLMs)</em>. My work leverages advanced <em>Deep Learning</em> techniques and explores their applications across various domains, including <em>Explainable Artificial Intelligence (XAI)</em>. Currently, I am interested in integrating these technologies to enhance machine learning applications and create innovative solutions.
 <span style="color:green;"><em>I am open to the possibility of collaboration. Feel free to email.</em></span> -->
 My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Learning, Natural Language Processing (NLP), Large Language Models (LLMs), Large Vision Models (LVMs), Computer Vision, Generative Adversarial Networks (GANs), Machine Learning, and the applications of Deep Learning</em>. I am open to collaboration options that are in line with my research aims and interests.<span style="color:green;"><em> Please contact me via email if you have any questions or are interested in collaborating.</em></span>
-</p>
+</p> 
+
+## Email
++ <span style="font-family:Georgia; color:black;">mukaffimoin28@gmail.com</span><br/>
++ <span style="font-family:Georgia; color:black;">mukaffi28@gmail.com</span><br/> 
 
 ## Recent News ⚡ 
 + <span style="font-family:Monaco; color:black;"><span style="color:brown">[October]</span> - Attended the 18th International Conference on Information Technology and Applications and presented two papers. ([ICITA 2024](https://www.icita.world/#/)) 
