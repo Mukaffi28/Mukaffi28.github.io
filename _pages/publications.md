@@ -387,7 +387,7 @@ copyButton.addEventListener('mouseout', function() {
 
 
 <!-- Paper 01 -->
-📌 [<span style="color:blue;font-family:Trebuchet MS;">**Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language**</span>](https://arxiv.org/abs/2311.11142) (<span style="color:red"><strong>Q2</strong></span>)<br>
+📌 [<span style="color:blue;font-family:Trebuchet MS;">**Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language**</span>](https://arxiv.org/abs/2311.11142) (<span style="color:red"><strong>Q1</strong></span>)<br>
 <span style="color:black;font-family:Georgia">
 	<font size="3"><strong>Authors</strong>: Fatema Tuj Johora Faria, <strong style="color:green">Mukaffi Bin Moin</strong>, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad.</font>
 </span>
