@@ -9,7 +9,7 @@ title: ""
 <span style="font-family:Trebuchet MS; color:black;">
 <span style="color:#6E2C00">Software Engineer I (AI/ML) </span><br/>
 [Brain Station 23](https://www.linkedin.com/company/brainstation-23/)<br/> 
-<span style="color:#6E2C00"><em>March 2024 - Present</em></span> 
+<span style="color:#6E2C00"><em>May 2025 - Present</em></span> 
 
 <ul style="font-family:Trebuchet MS; color:black;">
   <!-- <li> Designed and implemented a chatbot that utilizes LLMs to generate code for Arduino, ESP32, and Raspberry Pi platforms.</li>
@@ -23,7 +23,7 @@ title: ""
 <span style="font-family:Trebuchet MS; color:black;">
 <span style="color:#6E2C00">Machine Learning Engineer (Level-I)</span><br/>
 [ANTT Robotics Ltd.](https://www.linkedin.com/company/anttroboticsltd/)<br/> 
-<span style="color:#6E2C00"><em>March 2024 - Present</em></span> 
+<span style="color:#6E2C00"><em>March 2024 - April 2025</em></span> 
 
 <ul style="font-family:Trebuchet MS; color:black;">
   <li> Designed and implemented a chatbot that utilizes LLMs to generate code for Arduino, ESP32, and Raspberry Pi platforms.</li>
