@@ -13,9 +13,9 @@ redirect_from:
 <!-- <p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin (<button onclick="playMusic()" style='font-size:16px'>pronounce <i class='fas fa-volume-up'></i></button>), currently working as 
 a <a href="https://aust.edu/cse/faculty_member/mr_g_m_shahariar">Lecturer (Grade-I)</a> at the Department of CSE, 
 <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>. I obtained my Bachelor's degree in Computer Science and 
-Engineering from the same university. My career aspiration is to work in leading AI research laboratories. I am an incoming Ph.D. student in Fall 2024. More information soon!
+Engineering from the same university. My career aspiration is to work in leading AI research laboratories. I am an incoming Ph.D. student in Fall 2024. More information soon! https://www.linkedin.com/company/brainstation-23/ 
 </p> -->
-<p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin, currently working as a Machine Learning Engineer (Level-I) at <a href="https://www.linkedin.com/company/anttroboticsltd/">ANTT Robotics Ltd</a>. I obtained my Bachelor's degree in Computer Science and Engineering from the <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>.
+<p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin, currently working as a Software Engineer I (AI/ML) at <a href="https://www.linkedin.com/company/brainstation-23/">Brain Station 23</a>. I obtained my Bachelor's degree in Computer Science and Engineering from the <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>.
 </p>
 
 
