@@ -18,7 +18,7 @@ author_profile: true
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Journal:</strong><em> Under Review in International Journal of Information Management Data Insights </em></font>  ([International Journal of Information Management Data Insights](https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights))
+	<font size="3"><strong>Journal:</strong><em> Accepted in International Journal of Information Management Data Insights </em></font>  ([International Journal of Information Management Data Insights](https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights))
 </span>
 <br>
 [[<span style ="color:red"><font size="3">Code</font></span>](https://github.com/fatemafaria142/MultiBanFakeDetect-An-Extensive-Benchmark-Dataset-for-Multimodal-Bangla-Fake-News-Detection)] [[<span style ="color:red"><font size="3">Dataset</font></span>](https://data.mendeley.com/datasets/k5pbz9795f/1)]
@@ -101,27 +101,33 @@ author_profile: true
 
 
 <!-- Paper 06 -->
-📌 [<span style="color:blue;font-family:Trebuchet MS;">**Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation**</span>](https://arxiv.org/abs/2409.17130)<br>
+📌 [<span style="color:blue;font-family:Trebuchet MS;">**Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation**</span>](https://link.springer.com/chapter/10.1007/978-981-96-1758-6_46)<br>
 <span style="color:black;font-family:Georgia">
 	<font size="3"><strong>Authors</strong>: <strong style="color:green">Mukaffi Bin Moin</strong>, Pronay Debnath, Usafa Akther Rifa, Rijeet Bin Anis</font>
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em>Presented in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
+	<font size="3"><strong>Conference:</strong><em>Published in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://link.springer.com/book/10.1007/978-981-96-1758-6))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#Toxic2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] [[<span style ="color:red"><font size="3">PDF</font></span>](https://arxiv.org/pdf/2409.17130)] [<a style="color:red;" href="#" onclick="$('#Toxic2024_bib').toggle();return false;"><font size="3">Citation bib</font></a>] 
 
 <div id="Toxic2024_bib" class="bib" style="display:none;">
 	<pre>
-	  @misc{moin2024assessingleveltoxicitydistinct,
-      		title={Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation}, 
-     		author={Mukaffi Bin Moin and Pronay Debnath and Usafa Akther Rifa and Rijeet Bin Anis},
-      		year={2024},
-      		eprint={2409.17130},
-      		archivePrefix={arXiv},
-      		primaryClass={cs.CL},
-      		url={https://arxiv.org/abs/2409.17130}, 
+	  @InProceedings{10.1007/978-981-96-1758-6_46,
+		author="Moin, Mukaffi Bin
+		and Debnath, Pronay
+		and Rifa, Usafa Akther
+		and Anis, Rijeet Bin",
+		editor="Ullah, Abrar
+		and Anwar, Sajid",
+		title="Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation",
+		booktitle="Proceedings of International Conference on Information Technology and Applications",
+		year="2025",
+		publisher="Springer Nature Singapore",
+		address="Singapore",
+		pages="557--569",
+		isbn="978-981-96-1758-6"
 		}
 	</pre>
 </div>
@@ -141,13 +147,13 @@ author_profile: true
 
 
 <!-- Paper 06 -->
-📌 [<span style="color:blue;font-family:Trebuchet MS;">**Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language**</span>](https://arxiv.org/abs/2409.09504)<br>
+📌 [<span style="color:blue;font-family:Trebuchet MS;">**Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language**</span>](https://link.springer.com/chapter/10.1007/978-981-96-1758-6_32)<br>
 <span style="color:black;font-family:Georgia">
 	<font size="3"><strong>Authors</strong>: Fatema Tuj Johora Faria, <strong style="color:green">Mukaffi Bin Moin</strong>, Md. Mahfuzur Rahman, Md Morshed Alam Shanto, Asif Iftekher Fahim and Md. Moinul Hoque</font>
 </span>
 <br>
 <span style="color:black;font-family:Georgia">
-	<font size="3"><strong>Conference:</strong><em>Presented in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://icita.world/?__im-rgVYHazg=104405410931315538#/))
+	<font size="3"><strong>Conference:</strong><em>Published in 18th International Conference on Information Technology and Applications (ICITA 2024) </em></font> ([ICITA 2024](https://link.springer.com/book/10.1007/978-981-96-1758-6))
 </span>
 <br>
 [<a style="color:red;" href="#" onclick="$('#Uddessho2024_abstract').toggle();return false;"><font size="3">Abstract</font></a>] 
@@ -158,14 +164,22 @@ author_profile: true
 
 <div id="Uddessho2024_bib" class="bib" style="display:none; position: relative;">
 	<pre id="bibtext" style="position: relative; padding-right: 50px;">
-	  @misc{faria2024uddesshoextensivebenchmarkdataset,
-      		title={Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language}, 
-      		author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Md. Mahfuzur Rahman and Md Morshed Alam Shanto and Asif Iftekher Fahim and Md. Moinul Hoque},
-      		year={2024},
-      		eprint={2409.09504},
-      		archivePrefix={arXiv},
-      		primaryClass={cs.CL},
-      		url={https://arxiv.org/abs/2409.09504}, 
+	  @InProceedings{10.1007/978-981-96-1758-6_32,
+		author="Faria, Fatema Tuj Johora
+		and Moin, Mukaffi Bin
+		and Rahman, Md. Mahfuzur
+		and Shanto, Md. Morshed Alam
+		and Fahim, Asif Iftekher
+		and Hoque, Md. Moinul",
+		editor="Ullah, Abrar
+		and Anwar, Sajid",
+		title="Uddessho: An Extensive Benchmark Dataset for Multimodal Author Intent Classification in Low-Resource Bangla Language",
+		booktitle="Proceedings of International Conference on Information Technology and Applications",
+		year="2025",
+		publisher="Springer Nature Singapore",
+		address="Singapore",
+		pages="383--393",
+		isbn="978-981-96-1758-6"
 		}
 	</pre>
 	<button id="copyButton" onclick="copyBibText()" style="position: absolute; top: 10px; right: 10px; background-color: #FF6B6B; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s ease;">
