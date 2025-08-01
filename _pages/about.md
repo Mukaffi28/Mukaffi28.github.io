@@ -1,81 +1,586 @@
----
-permalink: /
-title: ""
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mukaffi Bin Moin - Software Engineer specializing in AI/ML, Computer Vision, and Multimodal AI">
+    <meta name="keywords" content="AI, Machine Learning, Computer Vision, Multimodal AI, Software Engineer">
+    <meta name="author" content="Mukaffi Bin Moin">
+    <title>Mukaffi Bin Moin - AI/ML Software Engineer</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+            --timeline-blue: #3498db;
+            --timeline-green: #27ae60;
+        }
 
-<span style="color:black; font-family:Georgia">Greetings!</span>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- <p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin (<button onclick="playMusic()" style='font-size:16px'>pronounce <i class='fas fa-volume-up'></i></button>), currently working as 
-a <a href="https://aust.edu/cse/faculty_member/mr_g_m_shahariar">Lecturer (Grade-I)</a> at the Department of CSE, 
-<a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>. I obtained my Bachelor's degree in Computer Science and 
-Engineering from the same university. My career aspiration is to work in leading AI research laboratories. I am an incoming Ph.D. student in Fall 2024. More information soon! https://www.linkedin.com/company/brainstation-23/ 
-</p> -->
-<p style="text-align:justify; color:black; font-family:Georgia">I am  Mukaffi Bin Moin, currently working as a Software Engineer I (AI/ML) at <a href="https://www.linkedin.com/company/brainstation-23/">Brain Station 23</a>. I obtained my Bachelor's degree in Computer Science and Engineering from the <a href="https://aust.edu/">Ahsanullah University of Science and Technology</a>.
-</p>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
 
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-<!-- <p style="text-align:justify;color:black; font-family:Georgia">
-My research works are intended to tackle low resource NLP, covering areas like <em>natural language generation</em>, <em>summarization</em>, <em>question answering (QA)</em>, 
-and <em>interpretability of language models</em>. I have utilized cutting-edge techniques like <em>generative</em> and 
-<em>contrastive learning</em> to improve language generation and <em>representation learning</em> for low resource language. 
-Additionally, I have applied natural language processing in specific <em>software engineering (SE)</em> tasks. At present, I am investigating bias, fairness and adversarial robustness in PLMs and LLMs.
-<span style="color:green;"><em>I am open to the possibility of collaboration. Feel free to email.</em></span>
-</p> -->
-<p style="text-align:justify;color:black; font-family:Georgia">
-<!-- My research focuses on <em>Medical Image Analysis</em>, <em>Computer Vision</em>, and the application of <em>Generative Adversarial Networks (GANs)</em> and <em>Multimodal Deep Learning</em>. I have also worked extensively with <em>Natural Language Processing (NLP)</em>, particularly in areas like <em>Natural Language Generation</em> and the use of <em>Large Language Models (LLMs)</em>. My work leverages advanced <em>Deep Learning</em> techniques and explores their applications across various domains, including <em>Explainable Artificial Intelligence (XAI)</em>. Currently, I am interested in integrating these technologies to enhance machine learning applications and create innovative solutions.
-<span style="color:green;"><em>I am open to the possibility of collaboration. Feel free to email.</em></span> -->
-My research interests focuses on <em>Medical Image Analysis, Multimodal Deep Learning, Natural Language Processing (NLP), Large Language Models (LLMs), Large Vision Models (LVMs), Computer Vision, Generative Adversarial Networks (GANs), Machine Learning, and the applications of Deep Learning</em>. I am open to collaboration options that are in line with my research aims and interests.<span style="color:green;"><em> Please contact me via email if you have any questions or are interested in collaborating.</em></span>
-</p> 
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #ffffff 100%);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
 
-## Email
-+ <span style="font-family:Georgia; color:black;">mukaffimoin28@gmail.com</span><br/>
-+ <span style="font-family:Georgia; color:black;">mukaffi28@gmail.com</span><br/> 
+        .greeting {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
 
-## Recent News ⚡ 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[October]</span> - Attended the 18th International Conference on Information Technology and Applications and presented two papers. ([ICITA 2024](https://www.icita.world/#/)) 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[October]</span> - Attended the 4th International Conference on Computing and Communication Networks presented two papers. ([ICCCNet 2024](https://icccn.co.uk/))
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[September]</span> - Attended the IEEE Region 10 Symposium at Netaji Subhas University of Technology (NSUT), New Delhi ([TENSYMP2024](https://ieeedelhi-tensymp2024.org/)). 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[August]</span> -  Two paper got accepted at 18th International Conference on Information Technology and Applications ([ICITA 2024](https://www.icita.world/#/)). 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[June]</span> -  One paper got accepted at The IEEE Region 10 Symposium ([TENSYMP2024](https://ieeedelhi-tensymp2024.org/)). 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[May]</span> -  Two paper got accepted at 4th International Conference on Computing and Communication Networks ([ICCCNet 2024](https://icccn.co.uk/)). 
-+ <span style="font-family:Monaco; color:black;"><span style="color:brown">[March]</span> -  Joined as an Machine Learning Engineer (Level-I) at [ANTT Robotics Ltd.](https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all)
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
 
-<style>
- .container {
-  display: flex;
-  justify-content: space-between; /* Centers the globe in the middle */
-  align-items: center; /* Vertically centers the content */
-  height: 300px; /* Full viewport height */
-}
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
 
-.empty-div {
-  flex: 1; /* Ensures the empty divs take equal space */
-}
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
 
-#globe-container {
-    width: 300px; /* Adjust the width */
-    height: 300px; /* Adjust the height */
-}
+        .content-section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
 
-</style>
+        /* About Section */
+        .about-text {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
 
-<div class="container">
-  <div class="empty-div"></div>
-  <div id="globe-container">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
-  </div>
-  <div class="empty-div"></div>
-</div>
+        .research-interests {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--secondary-color);
+            margin: 20px 0;
+        }
 
+        .research-interests h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
 
-<!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a95fqlak4h&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script> -->
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
 
+        .interest-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
 
+        .interest-tag:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
 
+        /* Contact Section */
+        .contact-section {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
 
+        .contact-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
 
+        .email-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .email-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .email-list li:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow);
+        }
+
+        .email-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Modern Timeline News Section */
+        .news-section {
+            grid-column: 1 / -1;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .news-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--timeline-blue), var(--timeline-green));
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0;
+            position: relative;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+            justify-content: flex-start;
+            padding-left: 40px;
+            margin-left: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            padding-right: 40px;
+        }
+
+        .timeline-content {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            max-width: 350px;
+            position: relative;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .timeline-content:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .timeline-desc {
+            color: var(--text-color);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .timeline-desc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .timeline-desc a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* Timeline dots */
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--secondary-color);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -48px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -48px;
+        }
+
+        /* Year separators */
+        .timeline-year {
+            width: 100%;
+            text-align: center;
+            margin: 30px 0 20px 0;
+            position: relative;
+        }
+
+        .timeline-year h3 {
+            display: inline-block;
+            background: white;
+            padding: 10px 20px;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        /* Mobile responsiveness for timeline */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px !important;
+                padding-right: 20px !important;
+                margin-left: 0 !important;
+                justify-content: flex-start !important;
+            }
+
+            .timeline-item:nth-child(even) .timeline-content::before,
+            .timeline-item:nth-child(odd) .timeline-content::before {
+                left: -48px;
+            }
+
+            .timeline-content {
+                max-width: 100%;
+            }
+        }
+
+        /* Collaboration Notice */
+        .collaboration-notice {
+            background: linear-gradient(135deg, var(--success-color), #2ecc71);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* Globe Section */
+        .globe-section {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--light-bg);
+            border-radius: var(--border-radius);
+            margin: 40px 0;
+        }
+
+        .globe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        #globe-container {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-section, .news-section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Accessibility improvements */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="greeting">Greetings!</h1>
+            <p class="subtitle">AI/ML Software Engineer & Researcher</p>
+        </header>
+
+        <main id="main-content" class="main-content">
+            <div>
+                <section class="content-section" aria-labelledby="about-heading">
+                    <h2 id="about-heading" style="display: none;">About Me</h2>
+                    <p class="about-text">
+                        I am <strong>Mukaffi Bin Moin</strong>, currently working as a Software Engineer I (AI/ML) at 
+                        <a href="https://www.linkedin.com/company/brainstation-23/" target="_blank" rel="noopener" aria-label="Brain Station 23 company page">Brain Station 23</a>. 
+                        I obtained my Bachelor's degree in Computer Science and Engineering from the 
+                        <a href="https://aust.edu/" target="_blank" rel="noopener" aria-label="Ahsanullah University website">Ahsanullah University of Science and Technology</a>.
+                    </p>
+
+                    <div class="research-interests">
+                        <h3>Research Interests</h3>
+                        <p>My research focuses on cutting-edge areas of artificial intelligence:</p>
+                        <div class="interests-list">
+                            <span class="interest-tag">Computer Vision</span>
+                            <span class="interest-tag">Vision-Language Models</span>
+                            <span class="interest-tag">Multimodal AI</span>
+                            <span class="interest-tag">Trustworthy AI</span>
+                            <span class="interest-tag">Multimodal Agents</span>
+                            <span class="interest-tag">AI For Healthcare</span>
+                        </div>
+                    </div>
+
+                    <div class="collaboration-notice">
+                        <i class="fas fa-handshake"></i>
+                        Please contact me via email if you have any questions or are interested in collaborating.
+                    </div>
+                </section>
+            </div>
+
+            <aside>
+                <section class="contact-section" aria-labelledby="contact-heading">
+                    <h2 id="contact-heading">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        Contact
+                    </h2>
+                    <ul class="email-list">
+                        <li>
+                            <a href="mailto:mukaffimoin28@gmail.com" class="email-link">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                mukaffimoin28@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:mukaffi28@gmail.com" class="email-link">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                mukaffi28@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Modern Timeline News Section -->
+            <section class="news-section" aria-labelledby="news-heading">
+                <h2 id="news-heading">
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                    Recent News
+                </h2>
+                
+                <div class="timeline">
+                    <div class="timeline-year">
+                        <h3>2025</h3>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[October]</div>
+                            <div class="timeline-desc">One paper got published.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[October]</div>
+                            <div class="timeline-desc">Joined as a Software Engineer I (AI/ML) at Brain Station 23 PLC.</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-year">
+                        <h3>2024</h3>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[October]</div>
+                            <div class="timeline-desc">Attended the 18th International Conference on Information Technology and Applications and presented two papers. 
+                                (<a href="https://www.icita.world/#/" target="_blank" rel="noopener">ICITA 2024</a>)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[October]</div>
+                            <div class="timeline-desc">Attended the 4th International Conference on Computing and Communication Networks presented two papers. 
+                                (<a href="https://icccn.co.uk/" target="_blank" rel="noopener">ICCCNet 2024</a>)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[September]</div>
+                            <div class="timeline-desc">Attended the IEEE Region 10 Symposium at Netaji Subhas University of Technology (NSUT), New Delhi 
+                                (<a href="https://ieeedelhi-tensymp2024.org/" target="_blank" rel="noopener">TENSYMP2024</a>).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[August]</div>
+                            <div class="timeline-desc">Two papers got accepted at 18th International Conference on Information Technology and Applications 
+                                (<a href="https://www.icita.world/#/" target="_blank" rel="noopener">ICITA 2024</a>).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[June]</div>
+                            <div class="timeline-desc">One paper got accepted at The IEEE Region 10 Symposium 
+                                (<a href="https://ieeedelhi-tensymp2024.org/" target="_blank" rel="noopener">TENSYMP2024</a>).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[May]</div>
+                            <div class="timeline-desc">Two papers got accepted at 4th International Conference on Computing and Communication Networks 
+                                (<a href="https://icccn.co.uk/" target="_blank" rel="noopener">ICCCNet 2024</a>).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">[March]</div>
+                            <div class="timeline-desc">Joined as a Machine Learning Engineer (Level-I) at 
+                                <a href="https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all" target="_blank" rel="noopener">ANTT Robotics Ltd.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="globe-section" aria-labelledby="visitor-map-heading">
+            <h2 id="visitor-map-heading" style="display: none;">Visitor Map</h2>
+            <div class="globe-container">
+                <div id="globe-container">
+                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI"></script>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
