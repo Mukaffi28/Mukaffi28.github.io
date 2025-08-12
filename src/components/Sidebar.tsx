@@ -173,9 +173,6 @@ const Sidebar: React.FC = () => {
             <LinkIcon>🐙</LinkIcon>
             GitHub
           </LinkItem>
-          <LinkItem href="" target="_blank" rel="noopener noreferrer">
-          
-          </LinkItem>
         </AcademicLinks>
         
         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
