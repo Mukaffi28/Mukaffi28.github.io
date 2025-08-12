@@ -1,0 +1,364 @@
+import React from "react";
+import styled from "styled-components";
+import {
+  Mail,
+  MapPin,
+  Calendar,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Award,
+  BookOpen,
+  Brain,
+  Eye,
+  Zap,
+  Sparkles,
+} from "lucide-react";
+
+const HomeContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+`;
+
+const Greeting = styled.h1`
+  color: #1e293b;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #7ab2d3, #4a628a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+`;
+
+const Description = styled.p`
+  color: #475569;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  a {
+    color: rgb(0, 102, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #4a628a;
+      text-decoration: none;
+    }
+  }
+`;
+
+const ResearchInterests = styled.div`
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #dff2eb 100%);
+  border: 1px solid #b9e5e8;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(122, 178, 211, 0.2);
+    border-color: #7ab2d3;
+  }
+
+  em {
+    color: rgb(17, 115, 172);
+    font-weight: 600;
+  }
+`;
+
+const EmailSection = styled.div`
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #dff2eb 100%);
+  border: 1px solid #b9e5e8;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(122, 178, 211, 0.2);
+    border-color: #7ab2d3;
+  }
+`;
+
+const EmailTitle = styled.h2`
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
+
+const EmailItem = styled.p`
+  color: #475569;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    color: #7ab2d3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #4a628a;
+      text-decoration: none;
+    }
+  }
+`;
+
+const NewsSection = styled.div`
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #dff2eb 100%);
+  border: 1px solid #b9e5e8;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(122, 178, 211, 0.2);
+    border-color: #7ab2d3;
+  }
+`;
+
+const NewsTitle = styled.h2`
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
+
+const NewsItem = styled.div`
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  border-left: 4px solid #7ab2d3;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(122, 178, 211, 0.2);
+  }
+
+  .date {
+    color: #4a628a;
+    font-weight: 700;
+  }
+
+  a {
+    color: #7ab2d3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #4a628a;
+      text-decoration: none;
+    }
+  }
+`;
+
+const GlobeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #dff2eb 100%);
+  border: 1px solid #b9e5e8;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(122, 178, 211, 0.2);
+    border-color: #7ab2d3;
+  }
+`;
+
+const Home: React.FC = () => {
+  return (
+    <HomeContainer>
+      <Greeting>Greetings!</Greeting>
+
+      <Description>
+        I am Mukaffi Bin Moin, currently working as a Software Engineer I
+        (AI/ML) at{" "}
+        <a
+          href="https://www.linkedin.com/company/brainstation-23/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Brain Station 23
+        </a>
+        . I obtained my Bachelor's degree in Computer Science and Engineering
+        from the{" "}
+        <a href="https://aust.edu/" target="_blank" rel="noopener noreferrer">
+          Ahsanullah University of Science and Technology
+        </a>
+        .
+      </Description>
+
+      <ResearchInterests>
+        My research interests focuses on{" "}
+        <em>
+          Natural Language Processing (NLP), Social Media Analysis, Low-Resource
+          Languages, Large Language Models, LLM Agents, Computer Vision,
+          Vision-Language Models, Multimodal AI, Trustworthy AI, Multimodal
+          Agents, AI For Healthcare
+        </em>
+        . I am open to collaboration options that are in line with my research
+        aims and interests.{" "}
+        <span style={{ color: "#7AB2D3" }}>
+          <em>
+            Please contact me via email if you have any questions or are
+            interested in collaborating.
+          </em>
+        </span>
+      </ResearchInterests>
+
+      <EmailSection>
+        <EmailTitle>
+          <Mail size={24} />
+          Email
+        </EmailTitle>
+        <EmailItem>
+          <Mail size={16} />
+          mukaffimoin28@gmail.com
+        </EmailItem>
+        <EmailItem>
+          <Mail size={16} />
+          mukaffi28@gmail.com
+        </EmailItem>
+      </EmailSection>
+
+      <NewsSection>
+        <NewsTitle>
+          <Zap size={24} />
+          Recent News
+        </NewsTitle>
+        <NewsItem>
+          <span className="date">[October]</span> - Attended the 18th
+          International Conference on Information Technology and Applications
+          and presented two papers. (
+          <a
+            href="https://www.icita.world/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ICITA 2024
+          </a>
+          )
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[October]</span> - Attended the 4th
+          International Conference on Computing and Communication Networks
+          presented two papers. (
+          <a
+            href="https://icccn.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ICCCNet 2024
+          </a>
+          )
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[September]</span> - Attended the IEEE Region
+          10 Symposium at Netaji Subhas University of Technology (NSUT), New
+          Delhi (
+          <a
+            href="https://ieeedelhi-tensymp2024.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TENSYMP2024
+          </a>
+          ).
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[August]</span> - Two paper got accepted at
+          18th International Conference on Information Technology and
+          Applications (
+          <a
+            href="https://www.icita.world/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ICITA 2024
+          </a>
+          ).
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[June]</span> - One paper got accepted at The
+          IEEE Region 10 Symposium (
+          <a
+            href="https://ieeedelhi-tensymp2024.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TENSYMP2024
+          </a>
+          ).
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[May]</span> - Two paper got accepted at 4th
+          International Conference on Computing and Communication Networks (
+          <a
+            href="https://icccn.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ICCCNet 2024
+          </a>
+          ).
+        </NewsItem>
+        <NewsItem>
+          <span className="date">[March]</span> - Joined as an Machine Learning
+          Engineer (Level-I) at{" "}
+          <a
+            href="https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ANTT Robotics Ltd.
+          </a>
+        </NewsItem>
+      </NewsSection>
+
+      {/* <GlobeContainer>
+      <a href="https://clustrmaps.com/site/1c38a"  title="ClustrMaps"><img src="https://www.clustrmaps.com/map_v2.png?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&cl=ffffff" width="300px" height="300px"/></a>
+      </GlobeContainer> */}
+    </HomeContainer>
+  );
+};
+
+export default Home;
