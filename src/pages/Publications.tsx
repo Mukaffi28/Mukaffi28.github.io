@@ -336,7 +336,11 @@ const CopyButton = styled.button`
     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
   }
 `;
+// const strong = styled.b`
+// font-weight: bold;
+// color: '#10b981'
 
+// `;
 const Publications: React.FC = () => {
   const [modalContent, setModalContent] = useState<{ type: 'abstract' | 'citation', title: string, content: string } | null>(null);
 
@@ -378,20 +382,20 @@ const Publications: React.FC = () => {
             <StatusBadge className="accepted">Q1 Journal</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Md Arafat Alam Khandaker, Zayeed Hasan, Niful Islam, Khan Md Hasib, Md Saddam Hossain Mukta, and M. F. Mridha
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Md Arafat Alam Khandaker, Zayeed Hasan, Niful Islam, Khan Md Hasib,  and M. F. Mridha
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Journal:</strong> <em>Accepted in International Journal of Information Management Data Insights</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>International Journal of Information Management Data Insights</a>)
+            <strong>Journal:</strong> <em>Published in International Journal of Information Management Data Insights</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>International Journal of Information Management Data Insights</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'MultiBanFakeDetect', 'Abstract content for MultiBanFakeDetect paper...')}
+              onClick={() => openModal('abstract', 'MultiBanFakeDetect', 'The rise of false news in recent years poses significant risks to society. As misinformation spreads rapidly, automated detection systems are essential to mitigate its impact. However, most existing methods rely solely on textual analysis, limiting their effectiveness. The challenge is further compounded by the lack of a large-scale, multimodal dataset for Bangla fake news detection, as existing datasets are either small or unimodal. To address this, we introduce MultiBanFakeDetect, a novel multimodal dataset integrating both textual and visual information. This dataset comprises manually curated real and fake news samples from various online sources. Additionally, we propose MultiFusionFake, a hybrid multimodal fake news detection framework that fuses text and image modalities using an Early Fusion approach while also comparing Late and Intermediate fusion techniques. Our experiments show that MultiFusionFake, combining DenseNet-169 and mBERT, achieves 79.69% accuracy, outperforming the text-only mBERT model’s 73.13%, reflecting a 6.56 percentage point improvement. These results underscore the advantages of multimodal over unimodal methods. To the best of our knowledge, this is the first study on multimodal fake news detection in the under-resourced Bangla context, offering a promising approach to combating online misinformation.')}
             >
               <Eye size={16} />
               Abstract
             </PublicationButton>
-            <PublicationLink className="pdf" href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink className="pdf" href="https://www.sciencedirect.com/science/article/pii/S2667096825000291" target="_blank" rel="noopener noreferrer">
               <FileText size={16} />
               PDF
             </PublicationLink>
@@ -405,7 +409,7 @@ const Publications: React.FC = () => {
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'MultiBanFakeDetect', '@article{faria2024multibanfakedetect,\n  title={MultiBanFakeDetect: Integrating Advanced Fusion Techniques for Multimodal Detection of Bangla Fake News in Under-Resourced Contexts},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and others},\n  journal={International Journal of Information Management Data Insights},\n  year={2024}\n}')}
+              onClick={() => openModal('citation', 'MultiBanFakeDetect', '@article{faria2025multibanfakedetect,\n  title={MultiBanFakeDetect: Integrating advanced fusion techniques for multimodal detection of Bangla fake news in under-resourced contexts},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and Hasan, Zayeed and Khandaker, Md Arafat Alam and Islam, Niful and Hasib, Khan Md and Mridha, MF},\n  journal={International Journal of Information Management Data Insights},\n volume={5},\n number={2},\n  pages={100347},\n  year={2025},\n publisher={Elsevier}\n}')}
             >
               <Quote size={16} />
               Citation bib
@@ -427,7 +431,7 @@ const Publications: React.FC = () => {
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'BanglaCalamityMMD', 'Abstract content for BanglaCalamityMMD paper...')}
+              onClick={() => openModal('abstract', 'BanglaCalamityMMD', 'Not published yet')}
             >
               <Eye size={16} />
               Abstract
@@ -446,7 +450,7 @@ const Publications: React.FC = () => {
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'BanglaCalamityMMD', '@article{faria2024banglacalamitymmd,\n  title={BanglaCalamityMMD: A Comprehensive Benchmark Dataset for Multimodal Disaster Identification in the Low-Resource Bangla Language},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and others},\n  journal={International Journal of Disaster Risk Reduction},\n  year={2024}\n}')}
+              onClick={() => openModal('citation', 'BanglaCalamityMMD', 'Not published yet')}
             >
               <Quote size={16} />
               Citation bib
@@ -468,7 +472,7 @@ const Publications: React.FC = () => {
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'BanglaMemeEvidence', 'Abstract content for BanglaMemeEvidence paper...')}
+              onClick={() => openModal('abstract', 'BanglaMemeEvidence', 'Not published yet')}
             >
               <Eye size={16} />
               Abstract
@@ -487,7 +491,7 @@ const Publications: React.FC = () => {
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'BanglaMemeEvidence', '@article{faria2024banglamemeevidence,\n  title={BanglaMemeEvidence: A Multimodal Benchmark Dataset for Explanatory Evidence Detection in Bengali Memes},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and others},\n  year={2024}\n}')}
+              onClick={() => openModal('citation', 'BanglaMemeEvidence', 'Not published yet')}
             >
               <Quote size={16} />
               Citation bib
@@ -509,7 +513,7 @@ const Publications: React.FC = () => {
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'Tackling Hallucination in Bengali NLP', 'Abstract content for Tackling Hallucination paper...')}
+              onClick={() => openModal('abstract', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
             >
               <Eye size={16} />
               Abstract
@@ -528,7 +532,7 @@ const Publications: React.FC = () => {
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'Tackling Hallucination in Bengali NLP', '@article{sujon2024tacklinghallucination,\n  title={Tackling Hallucination in Bengali NLP: Enhancing Paraphrase Generation, Reading Comprehension, and Formal Application Writing Using LLMs with Few-Shot Learning, Fine-Tuning, and RAG},\n  author={Sujon, Saidur Rahman and Chowdhury, Ahmadul Karim and Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and Shah, Faisal Muhammad},\n  year={2024}\n}')}
+              onClick={() => openModal('citation', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
             >
               <Quote size={16} />
               Citation bib

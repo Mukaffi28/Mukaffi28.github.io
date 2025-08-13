@@ -15,11 +15,12 @@ const HeaderContainer = styled.header`
 `;
 
 const NavContainer = styled.nav`
-  max-width: 1200px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 17rem;
   align-items: center;
   height: 70px; /* ensures all items are same height */
 `;
@@ -133,10 +134,13 @@ const Header: React.FC = () => {
   let visibleLinks = navigation;
   let dropdownLinks: typeof navigation = [];
 
-  if (windowWidth <= 1080 && windowWidth >= 768) {
+  if (windowWidth <= 1200 && windowWidth >= 900) {
+    visibleLinks = navigation.slice(0, 4);
+    dropdownLinks = navigation.slice(5);
+  } else if (windowWidth <= 900 && windowWidth >= 768) {
     visibleLinks = navigation.slice(0, 3);
-    dropdownLinks = navigation.slice(3);
-  } else if (windowWidth < 768) {
+    dropdownLinks = navigation.slice(5);}
+  else if (windowWidth < 768) {
     const activeItem = navigation.find(item => item.url === location.pathname);
     visibleLinks = activeItem ? [activeItem] : [];
     dropdownLinks = navigation.filter(item => item.url !== location.pathname);
