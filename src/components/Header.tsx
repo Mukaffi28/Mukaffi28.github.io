@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -12,163 +12,105 @@ const HeaderContainer = styled.header`
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(122, 178, 211, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:hover {
-    box-shadow: 0 8px 30px rgba(0, 131, 207, 0.15);
-  }
 `;
 
 const NavContainer = styled.nav`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  margin-left: 100px; /* Align with sidebar */
-  
-  @media (max-width: 920px) {
-    margin-left: 0;
-  }
+  height: 70px; /* ensures all items are same height */
 `;
 
 const Logo = styled(Link)`
-  font-size: 1.5rem;
   font-weight: bold;
-  background: linear-gradient(135deg,rgb(17, 115, 172), #4A628A);
+  font-size: clamp(1rem, 1.8vw + 0.5rem, 1.6rem);
+  background: linear-gradient(135deg, rgb(17, 115, 172), #4A628A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  
-  &:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.1);
-  }
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(135deg, #7AB2D3, #4A628A);
-    transition: width 0.3s ease;
-  }
-  
-  &:hover::after {
-    width: 100%;
-  }
+  display: flex;
+  align-items: center;
+  height: 100%;
 `;
 
-const NavMenu = styled.ul<{ isOpen: boolean }>`
+const NavList = styled.ul`
   display: flex;
   list-style: none;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
-  margin-left: 2rem;
-  gap: 0.5rem;
-  
-  @media (max-width: 1080px) {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(135deg, #ffffff 0%, #DFF2EB 100%);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    transform: ${props => props.isOpen ? 'translateY(0)' : 'translateY(-100%)'};
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 30px rgba(122, 178, 211, 0.15);
-    margin-left: 10rem;
-    gap: 0;
-  }
+  align-items: center; /* fix dropdown button vertical alignment */
 `;
 
-const NavItem = styled.li`
-  @media (max-width: 768px) {
-    margin: 0;
-    border-bottom: 1px solid #e2e8f0;
-  }
-`;
+const NavItem = styled.li``;
 
 const NavLink = styled(Link)<{ isActive: boolean }>`
-  color: ${props => props.isActive ? '#7AB2D3' : '#4A628A'};
-  text-decoration: none;
+  color: ${props => props.isActive ? '#fff' : '#4A628A'};
   font-weight: ${props => props.isActive ? '600' : '500'};
-  padding: 0.75rem 1.25rem;
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none; /* removes underline */
   background: ${props => props.isActive ? 'linear-gradient(135deg, #3A4A6A, #3A4A6A)' : 'transparent'};
-  color: ${props => props.isActive ? 'white' : '#4A628A'};
-  
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
   &:hover {
     background: ${props => props.isActive ? 'linear-gradient(135deg, #3A4A6A, #3A4A6A)' : 'linear-gradient(135deg, #7AB2D3, #B9E5E8)'};
-    color: ${props => props.isActive ? 'white' : 'rgb(63, 101, 167)'};
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(122, 178, 211, 0.2);
+    color: ${props => props.isActive ? 'white' : '#3F65A7'};
   }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #7AB2D3, #4A628A);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-  
-  &:hover::before {
-    opacity: 0.1;
-  }
-  
-  @media (max-width: 768px) {
+`;
+
+const DropdownWrapper = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+
+const DropdownButton = styled.button`
+  background: linear-gradient(135deg, #7AB2D3, #4A628A);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem; /* smaller padding for better vertical alignment */
+  border-radius: 8px;
+  cursor: pointer;
+  height: 38px; /* consistent height with nav links */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const DropdownMenu = styled.div<{ isOpen: boolean }>`
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  display: ${props => props.isOpen ? 'block' : 'none'};
+  min-width: 150px;
+  overflow: hidden;
+
+  a {
     display: block;
-    padding: 1rem 2rem;
-    border-radius: 0;
-    margin: 0.25rem 1rem;
-    
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #4A628A;
     &:hover {
-      transform: none;
-      box-shadow: none;
+      background: #DFF2EB;
     }
   }
 `;
 
-const MobileMenuButton = styled.button`
-  display: none;
-  background: linear-gradient(135deg, #7AB2D3, #4A628A);
-  border: none;
-  font-size: 1.5rem;
-  color: white;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(122, 178, 211, 0.3);
-  }
-  
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
@@ -182,35 +124,58 @@ const Header: React.FC = () => {
     { title: 'CV', url: '/cv' }
   ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  let visibleLinks = navigation;
+  let dropdownLinks: typeof navigation = [];
+
+  if (windowWidth <= 1080 && windowWidth >= 768) {
+    visibleLinks = navigation.slice(0, 3);
+    dropdownLinks = navigation.slice(3);
+  } else if (windowWidth < 768) {
+    const activeItem = navigation.find(item => item.url === location.pathname);
+    visibleLinks = activeItem ? [activeItem] : [];
+    dropdownLinks = navigation.filter(item => item.url !== location.pathname);
+  }
 
   return (
     <HeaderContainer>
       <NavContainer>
         <Logo to="/">Mukaffi Bin Moin</Logo>
-        
-        <MobileMenuButton onClick={toggleMenu}>
-          {isMenuOpen ? '✕' : '☰'}
-        </MobileMenuButton>
-        
-        <NavMenu isOpen={isMenuOpen}>
-          {navigation.map((item) => (
+        <NavList>
+          {visibleLinks.map(item => (
             <NavItem key={item.url}>
-              <NavLink 
-                to={item.url} 
+              <NavLink
+                to={item.url}
                 isActive={location.pathname === item.url}
-                onClick={() => setIsMenuOpen(false)}
               >
                 {item.title}
               </NavLink>
             </NavItem>
           ))}
-        </NavMenu>
+
+          {dropdownLinks.length > 0 && (
+            <DropdownWrapper>
+              <DropdownButton onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                ☰
+              </DropdownButton>
+              <DropdownMenu isOpen={isDropdownOpen}>
+                {dropdownLinks.map(item => (
+                  <Link key={item.url} to={item.url} onClick={() => setIsDropdownOpen(false)}>
+                    {item.title}
+                  </Link>
+                ))}
+              </DropdownMenu>
+            </DropdownWrapper>
+          )}
+        </NavList>
       </NavContainer>
     </HeaderContainer>
   );
 };
 
-export default Header; 
+export default Header;
