@@ -9,17 +9,19 @@ const HeaderContainer = styled.header`
   right: 0;
   background: linear-gradient(135deg, #ffffff 0%, #DFF2EB 100%);
   border-bottom: 1px solid #B9E5E8;
+  display: flex;
+  justify-content: center;
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(122, 178, 211, 0.1);
 `;
 
 const NavContainer = styled.nav`
-  max-width: 1700px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 17rem;
   align-items: center;
   height: 70px; /* ensures all items are same height */
@@ -31,10 +33,12 @@ const Logo = styled(Link)`
   background: linear-gradient(135deg, rgb(17, 115, 172), #4A628A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0 0 0 5rem;
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  height: 70px; /* ensures all items are same height */
 `;
 
 const NavList = styled.ul`
@@ -148,8 +152,9 @@ const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
+    <Logo to="/">Mukaffi Bin Moin</Logo>
       <NavContainer>
-        <Logo to="/">Mukaffi Bin Moin</Logo>
+    
         <NavList>
           {visibleLinks.map(item => (
             <NavItem key={item.url}>
