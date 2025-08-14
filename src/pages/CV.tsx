@@ -277,7 +277,7 @@ const CV: React.FC = () => {
         type="application/pdf"
         width="100%"
         height="800px"
-        style={{ border: 'none', borderRadius: '16px', boxShadow: '0 10px 30px rgba(122, 178, 211, 0.15)' }}
+        style={{ border: 'none', borderRadius: '16px', boxShadow: '0 10px 30px rgba(122, 178, 211, 0.15)' , margin: '0 0 3rem 0' }}
       >
     
       </object>
