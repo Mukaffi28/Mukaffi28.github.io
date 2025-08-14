@@ -213,7 +213,7 @@ const Sidebar: React.FC = () => {
             <LinkIcon>📚</LinkIcon>
             Semantic Scholar
           </LinkItem>
-          <LinkItem href="https://www.scopus.com/authid/detail.uri?authorId=57212345678" target="_blank" rel="noopener noreferrer">
+          <LinkItem href="https://www.scopus.com/authid/detail.uri?authorId=58755515500" target="_blank" rel="noopener noreferrer">
             <LinkIcon><Scopus size='20'/></LinkIcon>
             Scopus
           </LinkItem>
