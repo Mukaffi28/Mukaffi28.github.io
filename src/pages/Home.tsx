@@ -219,7 +219,15 @@ const Home: React.FC = () => {
         >
           Brain Station 23
         </a>
-        . I obtained my Bachelor's degree in Computer Science and Engineering
+        . Previously, I served as a Machine Learning Engineer and AI Team Lead at{" "}
+         <a
+          href="https://www.linkedin.com/company/anttroboticsltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ANTT Robotics Ltd
+        </a>
+        . I hold a Bachelor's degree in Computer Science and Engineering
         from the{" "}
         <a href="https://aust.edu/" target="_blank" rel="noopener noreferrer">
           Ahsanullah University of Science and Technology
