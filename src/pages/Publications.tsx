@@ -251,6 +251,18 @@ const StatusBadge = styled.span`
     background: linear-gradient(135deg, #8b5cf6, #7c3aed);
     color: white;
   }
+  &.rejected {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+  }
+  &.preprint {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+  
+  }
+  &.published {
+    background: linear-gradient(135deg, #f45e5eff, #e76565ff);
+    color: white;
 `;
 
 const Modal = styled.div`
@@ -372,14 +384,12 @@ const Publications: React.FC = () => {
         </HeaderText>
         <EqualContribution>[*] denotes equal contribution</EqualContribution>
       </Header>
-
       <YearSection>
-        <YearTitle>2024</YearTitle>
-        
+        <YearTitle>2025</YearTitle>
         <PublicationItem>
           <PublicationTitle>
             MultiBanFakeDetect: Integrating Advanced Fusion Techniques for Multimodal Detection of Bangla Fake News in Under-Resourced Contexts
-            <StatusBadge className="accepted">Q1 Journal</StatusBadge>
+            <StatusBadge className="published">Q1 Journal</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Md Arafat Alam Khandaker, Zayeed Hasan, Niful Islam, Khan Md Hasib,  and M. F. Mridha
@@ -419,14 +429,98 @@ const Publications: React.FC = () => {
 
         <PublicationItem>
           <PublicationTitle>
+              MindSpeak-Bangla: A HumanLLM Collaborative Dataset for Chain-of-Thought Adaptation in Bangla Mental Health Advice Generation
+          <StatusBadge className="published">Q1 Journal</StatusBadge> <StatusBadge className="under-review">Under Review</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Md. Mahfuzur Rahman, Khan Md Hasib, Md. Jakir Hossen, and M. F. Mridha.
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Journal:</strong> <em>Under Review in IEEE Open Journal of the Computer Society</em> (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782664" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>IEEE ComSoc</a>)
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'MindSpeak', 'Not published yet')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink className="code" href="#" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink className="dataset" href="#" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'MindSpeak', 'Not published yet')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+
+        <PublicationItem>
+          <PublicationTitle>
+              FanSpeak: A Bangla Dataset for Multi-Class Toxicity Detection in Sports Discourse and a Comparative Evaluation of PLMs and LLMs
+          <StatusBadge className="published">Q1 Journal</StatusBadge> <StatusBadge className="under-review">Under Review</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Md. Arafat Alam Khandaker*, Ziyan Shirin Raha*, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin*</strong>, Dipta Biswas, and Khan Md Hasib
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Journal:</strong> <em>Under Review in Information Processing & Management</em> (<a href="https://www.sciencedirect.com/journal/information-processing-and-management" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Information Processing & Management</a>)
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'FanSpeak', 'Not published yet')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink className="code" href="#" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink className="dataset" href="#" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'FanSpeak', 'Not published yet')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+      </YearSection>
+      <YearSection>
+        <YearTitle>2024</YearTitle>
+        <PublicationItem>
+          <PublicationTitle>
               BanglaCalamityMMD: A Comprehensive Benchmark Dataset for Multimodal Disaster Identification in the Low-Resource Bangla Language
-            <StatusBadge className="under-review">Under Review</StatusBadge>
+            <StatusBadge className="published">Q1 Journal</StatusBadge><StatusBadge className="under-review">Under Review</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Busra Kamal Rafa, Swarnajit Saha, Md. Mahfuzur Rahman, Khan Md Hasib, and M. F. Mridha
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in International Journal of Disaster Risk Reduction</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
+            <strong>Journal:</strong> <em>Under Review in International Journal of Disaster Risk Reduction (Q1)</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
@@ -457,82 +551,79 @@ const Publications: React.FC = () => {
             </PublicationButton>
           </PublicationLinks>
         </PublicationItem>
-
         <PublicationItem>
           <PublicationTitle>
-              BanglaMemeEvidence: A Multimodal Benchmark Dataset for Explanatory Evidence Detection in Bengali Memes
-            <StatusBadge className="submitted">Submitted</StatusBadge>
+              Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language
+            <StatusBadge className="published">Q1 Journal</StatusBadge><StatusBadge className="under-review">Under Review</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Asif Iftekher Fahim, Pronay Debnath, and Faisal Muhammad Shah.
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad.
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Conference:</strong> <em>Submitted to an A* Rank Conference</em>
+            <strong>Journal:</strong> <em>Under Review in Array (Q1)</em> (<a href="https://www.sciencedirect.com/journal/array" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Neural Computing and Applications</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'BanglaMemeEvidence', 'Not published yet')}
+              onClick={() => openModal('abstract', 'Vashantor', 'The Bangla linguistic variety is a fascinating mix of regional dialects that adds to the cultural diversity of the Bangla-speaking community. Despite extensive study into translating Bangla to English, English to Bangla, and Banglish to Bangla in the past, there has been a noticeable gap in translating Bangla regional dialects into standard Bangla. In this study, we set out to fill this gap by creating a collection of 32,500 sentences, encompassing Bangla, Banglish, and English, representing five regional Bangla dialects. Our aim is to translate these regional dialects into standard Bangla and detect regions accurately. To achieve this, we proposed models known as mT5 and BanglaT5 for translating regional dialects into standard Bangla. Additionally, we employed mBERT and Bangla-bert-base to determine the specific regions from where these dialects originated. Our experimental results showed the highest BLEU score of 69.06 for Mymensingh regional dialects and the lowest BLEU score of 36.75 for Chittagong regional dialects. We also observed the lowest average word error rate of 0.1548 for Mymensingh regional dialects and the highest of 0.3385 for Chittagong regional dialects. For region detection, we achieved an accuracy of 85.86% for Bangla-bert-base and 84.36% for mBERT. This is the first large-scale investigation of Bangla regional dialects to Bangla machine translation. We believe our findings will not only pave the way for future work on Bangla regional dialects to Bangla machine translation, but will also be useful in solving similar language-related challenges in low-resource language conditions.')}
             >
               <Eye size={16} />
               Abstract
             </PublicationButton>
-            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://arxiv.org/pdf/2311.11142" target="_blank" rel="noopener noreferrer">
               <FileText size={16} />
               PDF
             </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset" target="_blank" rel="noopener noreferrer">
               <Code size={16} />
               Code
             </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://data.mendeley.com/datasets/bj5jgk878b/2" target="_blank" rel="noopener noreferrer">
               <Database size={16} />
               Dataset
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'BanglaMemeEvidence', 'Not published yet')}
+              onClick={() => openModal('citation', 'Vashantor', '@misc{faria2023vashantor,\n  title={Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language},\n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Ahmed Al Wase and Mehidi Ahmmed and Md. Rabius Sani and Tashreef Muhammad},\n  year={2023},\n  eprint={2311.11142},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL}\n}')}
             >
               <Quote size={16} />
               Citation bib
             </PublicationButton>
           </PublicationLinks>
-        </PublicationItem>
-
+        </PublicationItem>        
         <PublicationItem>
           <PublicationTitle>
-              Tackling Hallucination in Bengali NLP: Enhancing Paraphrase Generation, Reading Comprehension, and Formal Application Writing Using LLMs with Few-Shot Learning, Fine-Tuning, and RAG
-            <StatusBadge className="submitted">Submitted</StatusBadge>
+              Motamot: A Dataset for Revealing the Supremacy of Large Language Models over Transformer Models in Bengali Political Sentiment Analysis
           </PublicationTitle>
           <PublicationAuthors>
-            <strong>Authors:</strong> Saidur Rahman Sujon, Ahmadul Karim Chowdhury, Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong> and Faisal Muhammad Shah
+            <strong>Authors:</strong> Fatema Tuj Johora Faria*, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin*</strong>, Rabeya Islam Mumu, Md Mahabubul Alam Abir, Abrar Nawar Alfy and Mohammad Shafiul Alam
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Conference:</strong> <em>Submitted to an A* Rank Conference</em>
+            <strong>Conference:</strong> <em>Published in The IEEE Region 10 Symposium (TENSYMP 2024)</em> (<a href="https://ieeedelhi-tensymp2024.org/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>TENSYMP 2024</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
+              onClick={() => openModal('abstract', 'Motamot', 'Sentiment analysis is the process of identifying and categorizing people\'s emotions or opinions regarding various topics. Analyzing political sentiment is critical for understanding the complexities of public opinion processes, especially during election seasons. It gives significant information on voter preferences, attitudes, and current trends. In this study, we investigate political sentiment analysis during Bangladeshi elections, specifically examining how effectively Pre-trained Language Models (PLMs) and Large Language Models (LLMs) capture complex sentiment characteristics. Our study centers on the creation of the "Motamot" dataset, comprising 7,058 instances annotated with positive and negative sentiments, sourced from diverse online newspaper portals, forming a comprehensive resource for political sentiment analysis. We meticulously evaluate the performance of various PLMs including BanglaBERT, Bangla BERT Base, XLM-RoBERTa, mBERT, and sahajBERT, alongside LLMs such as Gemini 1.5 Pro and GPT 3.5 Turbo. Moreover, we explore zero-shot and few-shot learning strategies to enhance our understanding of political sentiment analysis methodologies. Our findings underscore BanglaBERT\'s commendable accuracy of 88.10% among PLMs. However, the exploration into LLMs reveals even more promising results. Through the adept application of Few-Shot learning techniques, Gemini 1.5 Pro achieves an impressive accuracy of 96.33%, surpassing the remarkable performance of GPT 3.5 Turbo, which stands at 94%. This underscores Gemini 1.5 Pro\'s status as the superior performer in this comparison.')}
             >
               <Eye size={16} />
               Abstract
             </PublicationButton>
-            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://arxiv.org/pdf/2407.19528" target="_blank" rel="noopener noreferrer">
               <FileText size={16} />
               PDF
             </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://github.com/Mukaffi28/Bengali-Political-Sentiment-Analysis" target="_blank" rel="noopener noreferrer">
               <Code size={16} />
               Code
             </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="https://data.mendeley.com/datasets/hdhnrrwdz2/1" target="_blank" rel="noopener noreferrer">
               <Database size={16} />
               Dataset
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
+              onClick={() => openModal('citation', 'Motamot', '@misc{faria2024motamotdatasetrevealingsupremacy,\n  title={Motamot: A Dataset for Revealing the Supremacy of Large Language Models over Transformer Models in Bengali Political Sentiment Analysis}, \n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Rabeya Islam Mumu and Md Mahabubul Alam Abir and Abrar Nawar Alfy and Mohammad Shafiul Alam},\n  year={2024},\n  eprint={2407.19528},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL},\n  url={https://arxiv.org/abs/2407.19528}\n}')}
             >
               <Quote size={16} />
               Citation bib
@@ -620,129 +711,13 @@ const Publications: React.FC = () => {
           </PublicationLinks>
         </PublicationItem>
 
-        <PublicationItem>
-          <PublicationTitle>
-              Motamot: A Dataset for Revealing the Supremacy of Large Language Models over Transformer Models in Bengali Political Sentiment Analysis
-          </PublicationTitle>
-          <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria*, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin*</strong>, Rabeya Islam Mumu, Md Mahabubul Alam Abir, Abrar Nawar Alfy and Mohammad Shafiul Alam
-          </PublicationAuthors>
-          <PublicationVenue>
-            <strong>Conference:</strong> <em>Presented in The IEEE Region 10 Symposium (TENSYMP 2024)</em> (<a href="https://ieeedelhi-tensymp2024.org/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>TENSYMP 2024</a>)
-          </PublicationVenue>
-          <PublicationLinks>
-            <PublicationButton 
-              className="abstract"
-              onClick={() => openModal('abstract', 'Motamot', 'Sentiment analysis is the process of identifying and categorizing people\'s emotions or opinions regarding various topics. Analyzing political sentiment is critical for understanding the complexities of public opinion processes, especially during election seasons. It gives significant information on voter preferences, attitudes, and current trends. In this study, we investigate political sentiment analysis during Bangladeshi elections, specifically examining how effectively Pre-trained Language Models (PLMs) and Large Language Models (LLMs) capture complex sentiment characteristics. Our study centers on the creation of the "Motamot" dataset, comprising 7,058 instances annotated with positive and negative sentiments, sourced from diverse online newspaper portals, forming a comprehensive resource for political sentiment analysis. We meticulously evaluate the performance of various PLMs including BanglaBERT, Bangla BERT Base, XLM-RoBERTa, mBERT, and sahajBERT, alongside LLMs such as Gemini 1.5 Pro and GPT 3.5 Turbo. Moreover, we explore zero-shot and few-shot learning strategies to enhance our understanding of political sentiment analysis methodologies. Our findings underscore BanglaBERT\'s commendable accuracy of 88.10% among PLMs. However, the exploration into LLMs reveals even more promising results. Through the adept application of Few-Shot learning techniques, Gemini 1.5 Pro achieves an impressive accuracy of 96.33%, surpassing the remarkable performance of GPT 3.5 Turbo, which stands at 94%. This underscores Gemini 1.5 Pro\'s status as the superior performer in this comparison.')}
-            >
-              <Eye size={16} />
-              Abstract
-            </PublicationButton>
-            <PublicationLink href="https://arxiv.org/pdf/2407.19528" target="_blank" rel="noopener noreferrer">
-              <FileText size={16} />
-              PDF
-            </PublicationLink>
-            <PublicationLink href="https://github.com/Mukaffi28/Bengali-Political-Sentiment-Analysis" target="_blank" rel="noopener noreferrer">
-              <Code size={16} />
-              Code
-            </PublicationLink>
-            <PublicationLink href="https://data.mendeley.com/datasets/hdhnrrwdz2/1" target="_blank" rel="noopener noreferrer">
-              <Database size={16} />
-              Dataset
-            </PublicationLink>
-            <PublicationButton 
-              className="citation"
-              onClick={() => openModal('citation', 'Motamot', '@misc{faria2024motamotdatasetrevealingsupremacy,\n  title={Motamot: A Dataset for Revealing the Supremacy of Large Language Models over Transformer Models in Bengali Political Sentiment Analysis}, \n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Rabeya Islam Mumu and Md Mahabubul Alam Abir and Abrar Nawar Alfy and Mohammad Shafiul Alam},\n  year={2024},\n  eprint={2407.19528},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL},\n  url={https://arxiv.org/abs/2407.19528}\n}')}
-            >
-              <Quote size={16} />
-              Citation bib
-            </PublicationButton>
-          </PublicationLinks>
-        </PublicationItem>
 
-        <PublicationItem>
-          <PublicationTitle>
-              PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification
-          </PublicationTitle>
-          <PublicationAuthors>
-            <strong>Authors:</strong> Mohammad Shafiul Alam*, Fatema Tuj Johora Faria*, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>*, Ahmed Al Wase, Md. Rabius Sani and Khan Md Hasib
-          </PublicationAuthors>
-          <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in Journal of Intelligent Information Systems</em> (<a href="https://link.springer.com/journal/10844" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Journal of Intelligent Information Systems</a>)
-          </PublicationVenue>
-          <PublicationLinks>
-            <PublicationButton 
-              className="abstract"
-              onClick={() => openModal('abstract', 'PotatoGANs', 'Numerous applications have resulted from the automation of agricultural disease segmentation using deep learning techniques. However, when applied to new conditions, these applications frequently face the difficulty of overfitting, resulting in lower segmentation performance. In the context of potato farming, where diseases have a large influence on yields, it is critical for the agricultural economy to quickly and properly identify these diseases. Traditional data augmentation approaches, such as rotation, flip, and translation, have limitations and frequently fail to provide strong generalization results. To address these issues, our research employs a novel approach termed as PotatoGANs. In this novel data augmentation approach, two types of Generative Adversarial Networks (GANs) are utilized to generate synthetic potato disease images from healthy potato images. This approach not only expands the dataset but also adds variety, which helps to enhance model generalization. Using the Inception score as a measure, our experiments show the better quality and realisticness of the images created by PotatoGANs, emphasizing their capacity to resemble real disease images closely. The CycleGAN model outperforms the Pix2Pix GAN model in terms of image quality, as evidenced by its higher IS scores CycleGAN achieves higher Inception scores (IS) of 1.2001 and 1.0900 for black scurf and common scab, respectively. This synthetic data can significantly improve the training of large neural networks. It also reduces data collection costs while enhancing data diversity and generalization capabilities. Our work improves interpretability by combining three gradient-based Explainable AI algorithms (GradCAM, GradCAM++, and ScoreCAM) with three distinct CNN architectures (DenseNet169, Resnet152 V2, InceptionResNet V2) for potato disease classification.')}
-            >
-              <Eye size={16} />
-              Abstract
-            </PublicationButton>
-            <PublicationLink href="https://arxiv.org/pdf/2405.07332" target="_blank" rel="noopener noreferrer">
-              <FileText size={16} />
-              PDF
-            </PublicationLink>
-            <PublicationLink href="https://github.com/Mukaffi28/ExplainableAI-PotatoGAN-Cutting-Edge-Disease-Identification-for-Potatoes" target="_blank" rel="noopener noreferrer">
-              <Code size={16} />
-              Code
-            </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
-              <Database size={16} />
-              Dataset
-            </PublicationLink>
-            <PublicationButton 
-              className="citation"
-              onClick={() => openModal('citation', 'PotatoGANs', '@misc{alam2024potatogansutilizinggenerativeadversarial,\n  title={PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification}, \n  author={Mohammad Shafiul Alam and Fatema Tuj Johora Faria and Mukaffi Bin Moin and Ahmed Al Wase and Md. Rabius Sani and Khan Md Hasib},\n  year={2024},\n  eprint={2405.07332},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  url={https://arxiv.org/abs/2405.07332}\n}')}
-            >
-              <Quote size={16} />
-              Citation bib
-            </PublicationButton>
-          </PublicationLinks>
-        </PublicationItem>
 
-        <PublicationItem>
-          <PublicationTitle>
-              Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images
-          </PublicationTitle>
-          <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Pronay Debnath, Asif Iftekher Fahim, Faisal Muhammad Shah
-          </PublicationAuthors>
-          <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in Journal of Visual Communication and Image Representation</em> (<a href="https://www.sciencedirect.com/journal/journal-of-visual-communication-and-image-representation" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Journal of Visual Communication and Image Representation</a>)
-          </PublicationVenue>
-          <PublicationLinks>
-            <PublicationButton 
-              className="abstract"
-              onClick={() => openModal('abstract', 'Explainable CNN for Retinal Fundus', 'Our research focuses on the critical field of early diagnosis of disease by examining retinal blood vessels in fundus images. While automatic segmentation of retinal blood vessels holds promise for early detection, accurate analysis remains challenging due to the limitations of existing methods, which often lack discrimination power and are susceptible to influences from pathological regions. Our research in fundus image analysis advances deep learning-based classification using eight pre-trained CNN models. To enhance interpretability, we utilize Explainable AI techniques such as Grad-CAM, Grad-CAM++, Score-CAM, Faster Score-CAM, and Layer CAM. These techniques illuminate the decision-making processes of the models, fostering transparency and trust in their predictions. Expanding our exploration, we investigate ten models, including TransUNet with ResNet backbones, Attention U-Net with DenseNet and ResNet backbones, and Swin-UNET. Incorporating diverse architectures such as ResNet50V2, ResNet101V2, ResNet152V2, and DenseNet121 among others, this comprehensive study deepens our insights into attention mechanisms for enhanced fundus image analysis. Among the evaluated models for fundus image classification, ResNet101 emerged with the highest accuracy, achieving an impressive 94.17%. On the other end of the spectrum, EfficientNetB0 exhibited the lowest accuracy among the models, achieving a score of 88.33%. Furthermore, in the domain of fundus image segmentation, Swin-Unet demonstrated a Mean Pixel Accuracy of 86.19%, showcasing its effectiveness in accurately delineating regions of interest within fundus images. Conversely, Attention U-Net with DenseNet201 backbone exhibited the lowest Mean Pixel Accuracy among the evaluated models, achieving a score of 75.87%.')}
-            >
-              <Eye size={16} />
-              Abstract
-            </PublicationButton>
-            <PublicationLink href="https://arxiv.org/pdf/2405.07338" target="_blank" rel="noopener noreferrer">
-              <FileText size={16} />
-              PDF
-            </PublicationLink>
-            <PublicationLink href="https://github.com/fatemafaria142/Retinal-Fundus-Classification-using-XAI-and-Segmentation" target="_blank" rel="noopener noreferrer">
-              <Code size={16} />
-              Code
-            </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
-              <Database size={16} />
-              Dataset
-            </PublicationLink>
-            <PublicationButton 
-              className="citation"
-              onClick={() => openModal('citation', 'Explainable CNN for Retinal Fundus', '@misc{faria2024explainableconvolutionalneuralnetworks,\n  title={Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images}, \n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Pronay Debnath and Asif Iftekher Fahim and Faisal Muhammad Shah},\n  year={2024},\n  eprint={2405.07338},\n  archivePrefix={arXiv},\n  primaryClass={eess.IV},\n  url={https://arxiv.org/abs/2405.07338}\n}')}
-            >
-              <Quote size={16} />
-              Citation bib
-            </PublicationButton>
-          </PublicationLinks>
-        </PublicationItem>
 
         <PublicationItem>
           <PublicationTitle>
               Unraveling the Dominance of Large Language Models Over Transformer Models for Bangla Natural Language Inference: A Comprehensive Study
+            <StatusBadge className="accepted">Accepted</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Asif Iftekher Fahim, Pronay Debnath, Faisal Muhammad Shah
@@ -783,6 +758,7 @@ const Publications: React.FC = () => {
         <PublicationItem>
           <PublicationTitle>
               Exploring Explainable AI Techniques for Improved Interpretability in Lung and Colon Cancer Classification
+              <StatusBadge className="accepted">Accepted</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Fatema Tuj Johora Faria, Swarnajit Saha, Busra Kamal Rafa, Mohammad Shafiul Alam
@@ -818,52 +794,180 @@ const Publications: React.FC = () => {
               Citation bib
             </PublicationButton>
           </PublicationLinks>
-        </PublicationItem>
-      </YearSection>
-
-      <YearSection>
-        <YearTitle>2023</YearTitle>
-        
+        </PublicationItem>        
         <PublicationItem>
           <PublicationTitle>
-              Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language
-            <StatusBadge className="under-review">Q1 Journal</StatusBadge>
+              BanglaMemeEvidence: A Multimodal Benchmark Dataset for Explanatory Evidence Detection in Bengali Memes
+            <StatusBadge className="under-review">Under Review</StatusBadge>
           </PublicationTitle>
           <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad.
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Asif Iftekher Fahim, Pronay Debnath, and Faisal Muhammad Shah.
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in Neural Computing and Applications</em> (<a href="https://link.springer.com/journal/521" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Neural Computing and Applications</a>)
+            <strong>Conference:</strong> <em>Under Review in 2025 9th International Conference on Vision, Image and Signal Processing</em>
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
               className="abstract"
-              onClick={() => openModal('abstract', 'Vashantor', 'The Bangla linguistic variety is a fascinating mix of regional dialects that adds to the cultural diversity of the Bangla-speaking community. Despite extensive study into translating Bangla to English, English to Bangla, and Banglish to Bangla in the past, there has been a noticeable gap in translating Bangla regional dialects into standard Bangla. In this study, we set out to fill this gap by creating a collection of 32,500 sentences, encompassing Bangla, Banglish, and English, representing five regional Bangla dialects. Our aim is to translate these regional dialects into standard Bangla and detect regions accurately. To achieve this, we proposed models known as mT5 and BanglaT5 for translating regional dialects into standard Bangla. Additionally, we employed mBERT and Bangla-bert-base to determine the specific regions from where these dialects originated. Our experimental results showed the highest BLEU score of 69.06 for Mymensingh regional dialects and the lowest BLEU score of 36.75 for Chittagong regional dialects. We also observed the lowest average word error rate of 0.1548 for Mymensingh regional dialects and the highest of 0.3385 for Chittagong regional dialects. For region detection, we achieved an accuracy of 85.86% for Bangla-bert-base and 84.36% for mBERT. This is the first large-scale investigation of Bangla regional dialects to Bangla machine translation. We believe our findings will not only pave the way for future work on Bangla regional dialects to Bangla machine translation, but will also be useful in solving similar language-related challenges in low-resource language conditions.')}
+              onClick={() => openModal('abstract', 'BanglaMemeEvidence', 'Not published yet')}
             >
               <Eye size={16} />
               Abstract
             </PublicationButton>
-            <PublicationLink href="https://arxiv.org/pdf/2311.11142" target="_blank" rel="noopener noreferrer">
+            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
               <FileText size={16} />
               PDF
             </PublicationLink>
-            <PublicationLink href="https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
               <Code size={16} />
               Code
             </PublicationLink>
-            <PublicationLink href="https://data.mendeley.com/datasets/bj5jgk878b/2" target="_blank" rel="noopener noreferrer">
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
               <Database size={16} />
               Dataset
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'Vashantor', '@misc{faria2023vashantor,\n  title={Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language},\n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Ahmed Al Wase and Mehidi Ahmmed and Md. Rabius Sani and Tashreef Muhammad},\n  year={2023},\n  eprint={2311.11142},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL}\n}')}
+              onClick={() => openModal('citation', 'BanglaMemeEvidence', 'Not published yet')}
             >
               <Quote size={16} />
               Citation bib
             </PublicationButton>
           </PublicationLinks>
         </PublicationItem>
+
+        <PublicationItem>
+          <PublicationTitle>
+              Tackling Hallucination in Bengali NLP: Enhancing Paraphrase Generation, Reading Comprehension, and Formal Application Writing Using LLMs with Few-Shot Learning, Fine-Tuning, and RAG
+            <StatusBadge className="under-review">Under Review</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Saidur Rahman Sujon, Ahmadul Karim Chowdhury, Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong> and Faisal Muhammad Shah
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Conference:</strong> <em>Under Review in 29TH INTERNATIONAL COMPUTER SCIENCE AND ENGINEERING CONFERENCE</em>
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'Tackling Hallucination in Bengali NLP', 'Not published yet')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+
+
+
+        <PublicationItem>
+          <PublicationTitle>
+              PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification
+            <StatusBadge className="under-review">Under Review</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Mohammad Shafiul Alam*, Fatema Tuj Johora Faria*, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>*, Ahmed Al Wase, Md. Rabius Sani and Khan Md Hasib
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Conference:</strong> <em>Under Review in IEEEi-COSTE 2025</em> (<a href="https://i-coste.org/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Journal of Intelligent Information Systems</a>)
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'PotatoGANs', 'Numerous applications have resulted from the automation of agricultural disease segmentation using deep learning techniques. However, when applied to new conditions, these applications frequently face the difficulty of overfitting, resulting in lower segmentation performance. In the context of potato farming, where diseases have a large influence on yields, it is critical for the agricultural economy to quickly and properly identify these diseases. Traditional data augmentation approaches, such as rotation, flip, and translation, have limitations and frequently fail to provide strong generalization results. To address these issues, our research employs a novel approach termed as PotatoGANs. In this novel data augmentation approach, two types of Generative Adversarial Networks (GANs) are utilized to generate synthetic potato disease images from healthy potato images. This approach not only expands the dataset but also adds variety, which helps to enhance model generalization. Using the Inception score as a measure, our experiments show the better quality and realisticness of the images created by PotatoGANs, emphasizing their capacity to resemble real disease images closely. The CycleGAN model outperforms the Pix2Pix GAN model in terms of image quality, as evidenced by its higher IS scores CycleGAN achieves higher Inception scores (IS) of 1.2001 and 1.0900 for black scurf and common scab, respectively. This synthetic data can significantly improve the training of large neural networks. It also reduces data collection costs while enhancing data diversity and generalization capabilities. Our work improves interpretability by combining three gradient-based Explainable AI algorithms (GradCAM, GradCAM++, and ScoreCAM) with three distinct CNN architectures (DenseNet169, Resnet152 V2, InceptionResNet V2) for potato disease classification.')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink href="https://arxiv.org/pdf/2405.07332" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink href="https://github.com/Mukaffi28/ExplainableAI-PotatoGAN-Cutting-Edge-Disease-Identification-for-Potatoes" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'PotatoGANs', '@misc{alam2024potatogansutilizinggenerativeadversarial,\n  title={PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification}, \n  author={Mohammad Shafiul Alam and Fatema Tuj Johora Faria and Mukaffi Bin Moin and Ahmed Al Wase and Md. Rabius Sani and Khan Md Hasib},\n  year={2024},\n  eprint={2405.07332},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  url={https://arxiv.org/abs/2405.07332}\n}')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+
+
+
+                <PublicationItem>
+          <PublicationTitle>
+              Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images
+            <StatusBadge className="under-review">Under Review</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Pronay Debnath, Asif Iftekher Fahim, Faisal Muhammad Shah
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Journal:</strong> <em>Under Review in Journal of Visual Communication and Image Representation</em> (<a href="https://www.sciencedirect.com/journal/journal-of-visual-communication-and-image-representation" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Journal of Visual Communication and Image Representation</a>)
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'Explainable CNN for Retinal Fundus', 'Our research focuses on the critical field of early diagnosis of disease by examining retinal blood vessels in fundus images. While automatic segmentation of retinal blood vessels holds promise for early detection, accurate analysis remains challenging due to the limitations of existing methods, which often lack discrimination power and are susceptible to influences from pathological regions. Our research in fundus image analysis advances deep learning-based classification using eight pre-trained CNN models. To enhance interpretability, we utilize Explainable AI techniques such as Grad-CAM, Grad-CAM++, Score-CAM, Faster Score-CAM, and Layer CAM. These techniques illuminate the decision-making processes of the models, fostering transparency and trust in their predictions. Expanding our exploration, we investigate ten models, including TransUNet with ResNet backbones, Attention U-Net with DenseNet and ResNet backbones, and Swin-UNET. Incorporating diverse architectures such as ResNet50V2, ResNet101V2, ResNet152V2, and DenseNet121 among others, this comprehensive study deepens our insights into attention mechanisms for enhanced fundus image analysis. Among the evaluated models for fundus image classification, ResNet101 emerged with the highest accuracy, achieving an impressive 94.17%. On the other end of the spectrum, EfficientNetB0 exhibited the lowest accuracy among the models, achieving a score of 88.33%. Furthermore, in the domain of fundus image segmentation, Swin-Unet demonstrated a Mean Pixel Accuracy of 86.19%, showcasing its effectiveness in accurately delineating regions of interest within fundus images. Conversely, Attention U-Net with DenseNet201 backbone exhibited the lowest Mean Pixel Accuracy among the evaluated models, achieving a score of 75.87%.')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink href="https://arxiv.org/pdf/2405.07338" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink href="https://github.com/fatemafaria142/Retinal-Fundus-Classification-using-XAI-and-Segmentation" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'Explainable CNN for Retinal Fundus', '@misc{faria2024explainableconvolutionalneuralnetworks,\n  title={Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images}, \n  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Pronay Debnath and Asif Iftekher Fahim and Faisal Muhammad Shah},\n  year={2024},\n  eprint={2405.07338},\n  archivePrefix={arXiv},\n  primaryClass={eess.IV},\n  url={https://arxiv.org/abs/2405.07338}\n}')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+      </YearSection>
+
+      <YearSection>
+        <YearTitle>2023</YearTitle>
+        
+
 
         <PublicationItem>
           <PublicationTitle>
@@ -905,45 +1009,7 @@ const Publications: React.FC = () => {
           </PublicationLinks>
         </PublicationItem>
 
-        <PublicationItem>
-          <PublicationTitle>
-              Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation
-          </PublicationTitle>
-          <PublicationAuthors>
-            <strong>Authors:</strong> <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Pronay Debnath, Usafa Akther Rifa, Rijeet Bin Anis
-          </PublicationAuthors>
-          <PublicationVenue>
-            <strong>Conference:</strong> <em>Published in 18th International Conference on Information Technology and Applications (ICITA 2024)</em> (<a href="https://link.springer.com/book/10.1007/978-981-96-1758-6" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>ICITA 2024</a>)
-          </PublicationVenue>
-          <PublicationLinks>
-            <PublicationButton 
-              className="abstract"
-              onClick={() => openModal('abstract', 'Assessing the Level of Toxicity', 'Social media platforms have a vital role in the modern world, serving as conduits for communication, the exchange of ideas, and the establishment of networks. However, the misuse of these platforms through toxic comments, which can range from offensive remarks to hate speech, is a concerning issue. This study focuses on identifying toxic comments in the Bengali language targeting three specific groups: transgender people, indigenous people, and migrant people, from multiple social media sources. The study delves into the intricate process of identifying and categorizing toxic language while considering the varying degrees of toxicity: high, medium, and low. The methodology involves creating a dataset, manual annotation, and employing pre-trained transformer models like Bangla-BERT, bangla-bert-base, distil-BERT, and Bert-base-multilingual-cased for classification. Diverse assessment metrics such as accuracy, recall, precision, and F1-score are employed to evaluate the model\'s effectiveness. The experimental findings reveal that Bangla-BERT surpasses alternative models, achieving an F1-score of 0.8903. This research exposes the complexity of toxicity in Bangla social media dialogues, revealing its differing impacts on diverse demographic groups.')}
-            >
-              <Eye size={16} />
-              Abstract
-            </PublicationButton>
-            <PublicationLink href="https://arxiv.org/pdf/2409.17130" target="_blank" rel="noopener noreferrer">
-              <FileText size={16} />
-              PDF
-            </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
-              <Code size={16} />
-              Code
-            </PublicationLink>
-            <PublicationLink href="#" target="_blank" rel="noopener noreferrer">
-              <Database size={16} />
-              Dataset
-            </PublicationLink>
-            <PublicationButton 
-              className="citation"
-              onClick={() => openModal('citation', 'Assessing the Level of Toxicity', '@InProceedings{10.1007/978-981-96-1758-6_46,\n  author="Moin, Mukaffi Bin\n  and Debnath, Pronay\n  and Rifa, Usafa Akther\n  and Anis, Rijeet Bin",\n  editor="Ullah, Abrar\n  and Anwar, Sajid",\n  title="Assessing the Level of Toxicity Against Distinct Groups in Bangla Social Media Comments: A Comprehensive Investigation",\n  booktitle="Proceedings of International Conference on Information Technology and Applications",\n  year="2025",\n  publisher="Springer Nature Singapore",\n  address="Singapore",\n  pages="557--569",\n  isbn="978-981-96-1758-6"\n}')}
-            >
-              <Quote size={16} />
-              Citation bib
-            </PublicationButton>
-          </PublicationLinks>
-        </PublicationItem>
+
       </YearSection>
 
       {modalContent && (
