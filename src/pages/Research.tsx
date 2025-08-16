@@ -128,7 +128,7 @@ const Research: React.FC = () => {
   + <PaperTitle>MindSpeak-Bangla: A Human–LLM Collaborative Dataset for Chain-of-Thought Adaptation in Bangla Mental Health Advice Generation</PaperTitle>
 </PaperItem>
 <PaperItem>
-  + <PaperTitle>BanglaMedQA: A Dataset for Adapting Zero-Shot Chain-of-Thought Reasoning in Bengali Medical Question Answering</PaperTitle>
+  + <PaperTitle>BanglaMedQA: A Dataset for Adapting Zero-Shot Chain-of-Thought Reasoning in Bengali Medical Question Answering <span style={{ color: "#e22200ff" }}><em>(ongoing)</em></span></PaperTitle>
 </PaperItem>
       </ResearchArea>
       <ResearchArea>
@@ -144,11 +144,11 @@ const Research: React.FC = () => {
       <ResearchArea>
         <AreaTitle><ShieldCheck size={24}/> Trustworthy AI</AreaTitle>
         <PaperItem>
-  + <PaperTitle>Cross-Cultural Moral Bias Detection in Story Understanding: Analyzing Intentionality and Fairness in LLM Judgments</PaperTitle>
+  + <PaperTitle>Cross-Cultural Moral Bias Detection in Story Understanding: Analyzing Intentionality and Fairness in LLM Judgments <span style={{ color: "#e22200ff" }}><em>(ongoing)</em></span></PaperTitle>
 </PaperItem>
 
         <PaperItem>
-  + <PaperTitle>Breaking Silence: A Jailbreaking Prompt Framework for Generating Sensitive and Controversial Narratives in Bangla</PaperTitle>
+  + <PaperTitle>Breaking Silence: A Jailbreaking Prompt Framework for Generating Sensitive and Controversial Narratives in Bangla <span style={{ color: "#e22200ff" }}><em>(ongoing)</em></span></PaperTitle>
 </PaperItem>
 
       </ResearchArea>
