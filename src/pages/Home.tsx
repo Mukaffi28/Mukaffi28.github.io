@@ -185,6 +185,10 @@ const NewsItem = styled.div`
   }
 `;
 
+const YearTitle = ({ children }: { children: React.ReactNode }) => (
+  <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>{children}</h3>
+);
+
 const GlobeContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -268,99 +272,76 @@ const Home: React.FC = () => {
         </EmailItem>
       </EmailSection>
 
-      <NewsSection>
-        <NewsTitle>
-          <Zap size={24} />
-          Recent News
-        </NewsTitle>
-        <NewsItem>
-          <span className="date">[October]</span> - Attended the 18th
-          International Conference on Information Technology and Applications
-          and presented two papers. (
-          <a
-            href="https://www.icita.world/#/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICITA 2024
-          </a>
-          )
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[October]</span> - Attended the 4th
-          International Conference on Computing and Communication Networks
-          presented two papers. (
-          <a
-            href="https://icccn.co.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICCCNet 2024
-          </a>
-          )
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[September]</span> - Attended the IEEE Region
-          10 Symposium at Netaji Subhas University of Technology (NSUT), New
-          Delhi (
-          <a
-            href="https://ieeedelhi-tensymp2024.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TENSYMP2024
-          </a>
-          ).
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[August]</span> - Two paper got accepted at
-          18th International Conference on Information Technology and
-          Applications (
-          <a
-            href="https://www.icita.world/#/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICITA 2024
-          </a>
-          ).
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[June]</span> - One paper got accepted at The
-          IEEE Region 10 Symposium (
-          <a
-            href="https://ieeedelhi-tensymp2024.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TENSYMP2024
-          </a>
-          ).
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[May]</span> - Two paper got accepted at 4th
-          International Conference on Computing and Communication Networks (
-          <a
-            href="https://icccn.co.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICCCNet 2024
-          </a>
-          ).
-        </NewsItem>
-        <NewsItem>
-          <span className="date">[March]</span> - Joined as an Machine Learning
-          Engineer (Level-I) at{" "}
-          <a
-            href="https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ANTT Robotics Ltd.
-          </a>
-        </NewsItem>
-      </NewsSection>
+<NewsSection>
+  <NewsTitle>
+    <Zap size={24} />
+    Recent News
+  </NewsTitle>
+
+  {/* 2025 Events */}
+  <YearTitle>2025</YearTitle>
+
+  <NewsItem>
+    <span className="date">[May]</span> - Joined Brain Station 23 as a Software Engineer (AI/ML).
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[May]</span> - Two papers got accepted at ICITA. (
+    <a href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">
+      ICITA 2024
+    </a>
+    )
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>.
+  </NewsItem>
+
+  {/* 2024 Events */}
+  <YearTitle>2024</YearTitle>
+
+  <NewsItem>
+    <span className="date">[August]</span> - Two papers got accepted at the 18th International Conference on Information Technology and Applications (
+    <a href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">
+      ICITA 2024
+    </a>
+    ).
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[September]</span> - Attended the IEEE Region 10 Symposium at Netaji Subhas University of Technology (NSUT), New Delhi (
+    <a href="https://ieeedelhi-tensymp2024.org/" target="_blank" rel="noopener noreferrer">
+      TENSYMP2024
+    </a>
+    ).
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[October]</span> - Attended the 18th International Conference on Information Technology and Applications and presented two papers. (
+    <a href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">
+      ICITA 2024
+    </a>
+    )
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[October]</span> - Attended the 4th International Conference on Computing and Communication Networks and presented two papers. (
+    <a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer">
+      ICCCNet 2024
+    </a>
+    )
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[March]</span> - Joined as a Machine Learning Engineer (Level-I) at{" "}
+    <a href="https://www.linkedin.com/company/anttroboticsltd/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+      ANTT Robotics Ltd.
+    </a>
+  </NewsItem>
+
+</NewsSection>
+
+
 
       {/* <GlobeContainer>
       <a href="https://clustrmaps.com/site/1c38a"  title="ClustrMaps"><img src="https://www.clustrmaps.com/map_v2.png?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&cl=ffffff" width="300px" height="300px"/></a>

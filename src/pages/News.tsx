@@ -155,6 +155,42 @@ const News: React.FC = () => {
         <PageTitle>Recent News & Achievements</PageTitle>
         <PageSubtitle>Stay updated with my latest research and professional milestones</PageSubtitle>
       </PageHeader>
+       <YearSection>
+  <YearTitle>2025</YearTitle>
+  <TimelineContainer>
+
+    <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
+        [May]
+      </NewsDate>
+      <NewsContent>
+        Joined as a Software Engineer (AI/ML) at (<NewsLink href="https://www.linkedin.com/company/brainstation-23/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><ExternalLink size={14} />Brain Station 23</NewsLink>).
+      </NewsContent>
+    </NewsItem>
+
+    <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
+        [May]
+      </NewsDate>
+      <NewsContent>
+        Had two papers published in ICITA. (<NewsLink href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">ICITA 2024 <ExternalLink size={14} /></NewsLink>)
+      </NewsContent>
+    </NewsItem>
+
+    <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
+        [June]
+      </NewsDate>
+      <NewsContent>
+        Published a paper in the <i>International Journal of Information Management Data Insights (<NewsLink href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">IJIM<ExternalLink size={14} /></NewsLink>)</i>.
+      </NewsContent>
+    </NewsItem>
+  </TimelineContainer>
+</YearSection>
+
 
       <YearSection>
         <YearTitle>2024</YearTitle>
