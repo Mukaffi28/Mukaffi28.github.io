@@ -157,7 +157,7 @@ const NewsItem = styled.div`
   font-size: 1rem;
   line-height: 1.7;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: linear-gradient(135deg, #f1f5f9, #dbecfdff);
   border-radius: 12px;
   border-left: 4px solid #7ab2d3;
   transition: all 0.3s ease;
@@ -282,8 +282,12 @@ const Home: React.FC = () => {
   <YearTitle>2025</YearTitle>
 
   <NewsItem>
-    <span className="date">[May]</span> - Joined Brain Station 23 as a Software Engineer (AI/ML).
-  </NewsItem>
+    <span className="date">[May]</span> - Joined Brain Station 23 as a Software Engineer (AI/ML). (
+    <a href="https://www.linkedin.com/company/brainstation-23/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+      Brain Station 23
+    </a>
+    )
+  </NewsItem> 
 
   <NewsItem>
     <span className="date">[May]</span> - Two papers got accepted at ICITA. (
@@ -294,7 +298,11 @@ const Home: React.FC = () => {
   </NewsItem>
 
   <NewsItem>
-    <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>.
+    <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>. (
+    <a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">
+      IJIM
+    </a>
+    )
   </NewsItem>
 
   {/* 2024 Events */}
