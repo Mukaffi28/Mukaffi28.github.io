@@ -1,6 +1,39 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  /* Base mobile-friendly styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    
+    @media (max-width: 768px) {
+      font-size: 14px; // Slightly reduced base font size for mobile
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 13px; // Further reduced base font size for very small screens
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; // Prevent horizontal scrolling on mobile
+  }
+  
+  /* Touch-friendly improvements for mobile */
+  button, a, input, select, textarea {
+    @media (max-width: 768px) {
+      min-height: 44px; // Minimum touch target size
+      min-width: 44px; // Minimum touch target size
+    }
+  }
+  
   /* Modern Card Hover Effects */
   .modern-card {
     background: linear-gradient(135deg, #ffffff 0%, #DFF2EB 100%);
@@ -348,8 +381,80 @@ export const GlobalStyles = createGlobalStyle`
     .dataset-card,
     .education-card,
     .work-card {
-      padding: 20px;
-      margin-bottom: 16px;
+      padding: 16px; // Reduced padding for mobile
+      margin-bottom: 12px; // Reduced margin for mobile
+      border-radius: 12px; // Reduced border radius for mobile
+    }
+    
+    .modern-button {
+      padding: 10px 20px; // Reduced padding for mobile
+      font-size: 0.9rem; // Reduced font size for mobile
+    }
+    
+    /* Mobile-specific improvements */
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.2; // Tighter line height for mobile
+    }
+    
+    p {
+      line-height: 1.5; // Tighter line height for mobile
+    }
+    
+    /* Disable hover effects on mobile for better performance */
+    .modern-card:hover,
+    .glass-card:hover,
+    .publication-card:hover,
+    .research-card:hover,
+    .dataset-card:hover,
+    .education-card:hover,
+    .work-card:hover {
+      transform: none;
+      box-shadow: 0 4px 6px rgba(122, 178, 211, 0.1);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modern-card,
+    .glass-card,
+    .publication-card,
+    .research-card,
+    .dataset-card,
+    .education-card,
+    .work-card {
+      padding: 12px; // Further reduced padding for very small screens
+      margin-bottom: 10px; // Further reduced margin for very small screens
+      border-radius: 10px; // Further reduced border radius for very small screens
+    }
+    
+    .modern-button {
+      padding: 8px 16px; // Further reduced padding for very small screens
+      font-size: 0.85rem; // Further reduced font size for very small screens
+    }
+    
+    /* Very small screen improvements */
+    h1 {
+      font-size: 1.5rem !important; // Force smaller headings
+    }
+    
+    h2 {
+      font-size: 1.3rem !important; // Force smaller headings
+    }
+    
+    h3 {
+      font-size: 1.1rem !important; // Force smaller headings
+    }
+  }
+  
+  /* Landscape orientation adjustments for mobile */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .modern-card,
+    .glass-card,
+    .publication-card,
+    .research-card,
+    .dataset-card,
+    .education-card,
+    .work-card {
+      padding: 14px; // Slightly reduced padding for landscape
     }
   }
 `;

@@ -41,6 +41,10 @@ const Scopus = ({ size }: ScopusProps) => (
 const ProfileSection = styled.div`
   text-align: center;
   margin-bottom: 2rem;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem; // Reduced margin for mobile
+  }
 `;
 
 const ProfilePicture = styled.div`
@@ -60,6 +64,12 @@ const ProfilePicture = styled.div`
     height: 100%;
     object-fit: cover;
   }
+  
+  @media (max-width: 768px) {
+    width: 120px; // Reduced size for mobile
+    height: 120px; // Reduced size for mobile
+    margin: 0 auto 0.75rem; // Reduced margin for mobile
+  }
 `;
 
 const Name = styled.h1`
@@ -70,6 +80,11 @@ const Name = styled.h1`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0 0 0.5rem 0;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem; // Reduced font size for mobile
+    margin: 0 0 0.4rem 0; // Reduced margin for mobile
+  }
 `;
 
 const Title = styled.p`
@@ -78,6 +93,11 @@ const Title = styled.p`
   margin: 0 0 2rem 0;
   text-align: center;
   font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem; // Reduced font size for mobile
+    margin: 0 0 1.5rem 0; // Reduced margin for mobile
+  }
 `;
 type LinkedinProps = {
   size: string;
@@ -92,6 +112,10 @@ const Linkedin = ({ size }: LinkedinProps) => (
 const ContactInfo = styled.div`
   margin-bottom: 2rem;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem; // Reduced margin for mobile
+  }
 `;
 
 const ContactItem = styled.div`
@@ -105,11 +129,20 @@ const ContactItem = styled.div`
   span {
     margin-left: 0.5rem;
   }
+  
+  @media (max-width: 768px) {
+    font-size: 0.85rem; // Reduced font size for mobile
+    margin-bottom: 0.4rem; // Reduced margin for mobile
+  }
 `;
 
 const AcademicLinks = styled.div`
   text-align: center;
   margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 0.75rem; // Reduced margin for mobile
+  }
 `;
 
 const LinkItem = styled.a`
@@ -133,6 +166,16 @@ const LinkItem = styled.a`
   &:last-child {
     border-bottom: none;
   }
+  
+  @media (max-width: 768px) {
+    padding: 0.6rem 0; // Reduced padding for mobile
+    font-size: 0.9rem; // Reduced font size for mobile
+    
+    &:hover {
+      padding: 0.6rem 0.8rem; // Reduced hover padding for mobile
+      margin: 0.2rem 0; // Reduced hover margin for mobile
+    }
+  }
 `;
 
 const LinkIcon = styled.div`
@@ -143,12 +186,23 @@ const LinkIcon = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  
+  @media (max-width: 768px) {
+    width: 18px; // Reduced size for mobile
+    height: 18px; // Reduced size for mobile
+    margin-right: 0.6rem; // Reduced margin for mobile
+    font-size: 1.1rem; // Reduced font size for mobile
+  }
 `;
 
 const SidebarContent = styled.div`
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem; // Reduced padding for mobile
+  }
 `;
 
 type OrcidProps = {

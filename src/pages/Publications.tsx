@@ -125,20 +125,20 @@ const PublicationVenue = styled.p`
 const PublicationLinks = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   margin-top: 1.5rem;
 `;
 
 const PublicationButton = styled.button`
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
+  gap: 6px;
+  padding: 6px 12px;
   color: white;
   text-decoration: none;
   border: none;
-  border-radius: 12px;
-  font-size: 0.85rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
@@ -179,13 +179,13 @@ const PublicationButton = styled.button`
 const PublicationLink = styled.a`
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
+  gap: 6px;
+  padding: 6px 12px;
   background: linear-gradient(135deg, #7AB2D3, #4A628A);
   color: white;
   text-decoration: none;
-  border-radius: 12px;
-  font-size: 0.85rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;

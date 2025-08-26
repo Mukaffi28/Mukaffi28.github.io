@@ -27,6 +27,7 @@ const MainContent = styled.main`
   
   @media (max-width: 768px) {
     margin-left: 0;
+    padding-top: 60px; // Reduced padding for mobile
   }
 `;
 
@@ -34,6 +35,14 @@ const ContentWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem; // Reduced padding for mobile
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.5rem; // Further reduced padding for very small screens
+  }
 `;
 
 function App() {

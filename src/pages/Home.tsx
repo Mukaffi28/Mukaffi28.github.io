@@ -20,6 +20,14 @@ const HomeContainer = styled.div`
   margin: 0 auto;
   padding: 2rem;
   font-family: "Inter", sans-serif;
+  
+  @media (max-width: 768px) {
+    padding: 1rem; // Reduced padding for mobile
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.5rem; // Further reduced padding for very small screens
+  }
 `;
 
 const Greeting = styled.h1`
@@ -32,6 +40,16 @@ const Greeting = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem; // Reduced font size for mobile
+    margin-bottom: 1.5rem; // Reduced margin for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem; // Further reduced font size for very small screens
+    margin-bottom: 1rem; // Further reduced margin for very small screens
+  }
 `;
 
 const Description = styled.p`
@@ -51,6 +69,18 @@ const Description = styled.p`
       color: #4a628a;
       text-decoration: none;
     }
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem; // Reduced font size for mobile
+    margin-bottom: 1.5rem; // Reduced margin for mobile
+    line-height: 1.6; // Reduced line height for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem; // Further reduced font size for very small screens
+    margin-bottom: 1rem; // Further reduced margin for very small screens
+    line-height: 1.5; // Further reduced line height for very small screens
   }
 `;
 
@@ -76,6 +106,20 @@ const ResearchInterests = styled.div`
     color: rgb(17, 115, 172);
     font-weight: 600;
   }
+  
+  @media (max-width: 768px) {
+    font-size: 1rem; // Reduced font size for mobile
+    margin-bottom: 2rem; // Reduced margin for mobile
+    padding: 1.5rem; // Reduced padding for mobile
+    line-height: 1.6; // Reduced line height for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem; // Further reduced font size for very small screens
+    margin-bottom: 1.5rem; // Further reduced margin for very small screens
+    padding: 1rem; // Further reduced padding for very small screens
+    line-height: 1.5; // Further reduced line height for very small screens
+  }
 `;
 
 const EmailSection = styled.div`
@@ -91,6 +135,16 @@ const EmailSection = styled.div`
     box-shadow: 0 15px 35px rgba(122, 178, 211, 0.2);
     border-color: #7ab2d3;
   }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem; // Reduced margin for mobile
+    padding: 1.5rem; // Reduced padding for mobile
+  }
+  
+  @media (max-width: 480px) {
+    margin-bottom: 1.5rem; // Further reduced margin for very small screens
+    padding: 1rem; // Further reduced padding for very small screens
+  }
 `;
 
 const EmailTitle = styled.h2`
@@ -101,6 +155,16 @@ const EmailTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 12px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.6rem; // Reduced font size for mobile
+    margin-bottom: 1rem; // Reduced margin for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.4rem; // Further reduced font size for very small screens
+    margin-bottom: 0.75rem; // Further reduced margin for very small screens
+  }
 `;
 
 const EmailItem = styled.p`

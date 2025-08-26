@@ -6,6 +6,14 @@ const CVContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem; // Reduced padding for mobile
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.5rem; // Further reduced padding for very small screens
+  }
 `;
 
 const DownloadSection = styled.div`
@@ -40,6 +48,16 @@ const DownloadSection = styled.div`
   &:hover::before {
     opacity: 1;
   }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem; // Reduced margin for mobile
+    padding: 1.5rem; // Reduced padding for mobile
+  }
+  
+  @media (max-width: 480px) {
+    margin-bottom: 1.5rem; // Further reduced margin for very small screens
+    padding: 1rem; // Further reduced padding for very small screens
+  }
 `;
 
 const DownloadText = styled.p`
@@ -48,6 +66,18 @@ const DownloadText = styled.p`
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem; // Reduced font size for mobile
+    margin-bottom: 1rem; // Reduced margin for mobile
+    line-height: 1.5; // Reduced line height for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem; // Further reduced font size for very small screens
+    margin-bottom: 0.75rem; // Further reduced margin for very small screens
+    line-height: 1.4; // Further reduced line height for very small screens
+  }
 `;
 
 const DownloadLink = styled.a`
@@ -87,6 +117,16 @@ const DownloadLink = styled.a`
   &:hover::before {
     left: 100%;
   }
+  
+  @media (max-width: 768px) {
+    padding: 10px 16px; // Reduced padding for mobile
+    font-size: 0.9rem; // Reduced font size for mobile
+  }
+  
+  @media (max-width: 480px) {
+    padding: 8px 14px; // Further reduced padding for very small screens
+    font-size: 0.85rem; // Further reduced font size for very small screens
+  }
 `;
 
 const PDFViewer = styled.iframe`
@@ -101,6 +141,18 @@ const PDFViewer = styled.iframe`
   &:hover {
     box-shadow: 0 15px 40px rgba(122, 178, 211, 0.25);
   }
+  
+  @media (max-width: 768px) {
+    height: 600px; // Reduced height for mobile
+    margin-bottom: 2rem; // Reduced margin for mobile
+    border-radius: 12px; // Reduced border radius for mobile
+  }
+  
+  @media (max-width: 480px) {
+    height: 500px; // Further reduced height for very small screens
+    margin-bottom: 1.5rem; // Further reduced margin for very small screens
+    border-radius: 10px; // Further reduced border radius for very small screens
+  }
 `;
 
 const ContactSection = styled.div`
@@ -111,6 +163,13 @@ const ContactSection = styled.div`
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 1.5rem; // Reduced gap for mobile
+    margin-bottom: 1.5rem; // Reduced margin for mobile
+  }
+  
+  @media (max-width: 480px) {
+    gap: 1rem; // Further reduced gap for very small screens
+    margin-bottom: 1rem; // Further reduced margin for very small screens
   }
 `;
 
@@ -144,6 +203,26 @@ const EmailSection = styled.div`
     opacity: 1;
     transform: scale(1.2);
   }
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem; // Reduced padding for mobile
+    
+    &::after {
+      top: 1rem; // Adjusted position for mobile
+      right: 1rem; // Adjusted position for mobile
+      font-size: 1.5rem; // Reduced size for mobile
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1rem; // Further reduced padding for very small screens
+    
+    &::after {
+      top: 0.75rem; // Further adjusted position for very small screens
+      right: 0.75rem; // Further adjusted position for very small screens
+      font-size: 1.25rem; // Further reduced size for very small screens
+    }
+  }
 `;
 
 const SocialSection = styled.div`
@@ -176,6 +255,26 @@ const SocialSection = styled.div`
     opacity: 1;
     transform: scale(1.2);
   }
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem; // Reduced padding for mobile
+    
+    &::after {
+      top: 1rem; // Adjusted position for mobile
+      right: 1rem; // Adjusted position for mobile
+      font-size: 1.5rem; // Reduced size for mobile
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1rem; // Further reduced padding for very small screens
+    
+    &::after {
+      top: 0.75rem; // Further adjusted position for very small screens
+      right: 0.75rem; // Further adjusted position for very small screens
+      font-size: 1.25rem; // Further reduced size for very small screens
+    }
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -195,6 +294,26 @@ const SectionTitle = styled.h2`
     background: linear-gradient(135deg, #7AB2D3, #4A628A);
     border-radius: 2px;
   }
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem; // Reduced font size for mobile
+    margin-bottom: 1rem; // Reduced margin for mobile
+    gap: 8px; // Reduced gap for mobile
+    
+    &::before {
+      height: 20px; // Reduced height for mobile
+    }
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.2rem; // Further reduced font size for very small screens
+    margin-bottom: 0.75rem; // Further reduced margin for very small screens
+    gap: 6px; // Further reduced gap for very small screens
+    
+    &::before {
+      height: 18px; // Further reduced height for very small screens
+    }
+  }
 `;
 
 const EmailItem = styled.p`
@@ -209,6 +328,18 @@ const EmailItem = styled.p`
   &:last-child {
     margin-bottom: 0;
   }
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem; // Reduced font size for mobile
+    margin-bottom: 0.6rem; // Reduced margin for mobile
+    gap: 6px; // Reduced gap for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem; // Further reduced font size for very small screens
+    margin-bottom: 0.5rem; // Further reduced margin for very small screens
+    gap: 5px; // Further reduced gap for very small screens
+  }
 `;
 
 const SocialText = styled.p`
@@ -217,6 +348,18 @@ const SocialText = styled.p`
   line-height: 1.6;
   font-size: 1rem;
   margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem; // Reduced font size for mobile
+    margin-bottom: 0.75rem; // Reduced margin for mobile
+    line-height: 1.5; // Reduced line height for mobile
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem; // Further reduced font size for very small screens
+    margin-bottom: 0.5rem; // Further reduced margin for very small screens
+    line-height: 1.4; // Further reduced line height for very small screens
+  }
 `;
 
 const SocialLink = styled.a`
@@ -255,6 +398,18 @@ const SocialLink = styled.a`
   
   &:hover::before {
     left: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 8px 14px; // Reduced padding for mobile
+    font-size: 0.9rem; // Reduced font size for mobile
+    gap: 6px; // Reduced gap for mobile
+  }
+  
+  @media (max-width: 480px) {
+    padding: 6px 12px; // Further reduced padding for very small screens
+    font-size: 0.85rem; // Further reduced font size for very small screens
+    gap: 5px; // Further reduced gap for very small screens
   }
 `;
 
