@@ -158,7 +158,16 @@ const News: React.FC = () => {
        <YearSection>
   <YearTitle>2025</YearTitle>
   <TimelineContainer>
-
+  <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
+        [June]
+      </NewsDate>
+      <NewsContent>
+        Published a paper in the <i>International Journal of Information Management Data Insights (<NewsLink href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">IJIM<ExternalLink size={14} /></NewsLink>)</i>.
+      </NewsContent>
+    </NewsItem>
+    
     <NewsItem>
       <NewsDate>
         <Calendar size={18} />
@@ -176,16 +185,6 @@ const News: React.FC = () => {
       </NewsDate>
       <NewsContent>
         Had two papers published in ICITA. (<NewsLink href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">ICITA 2024 <ExternalLink size={14} /></NewsLink>)
-      </NewsContent>
-    </NewsItem>
-
-    <NewsItem>
-      <NewsDate>
-        <Calendar size={18} />
-        [June]
-      </NewsDate>
-      <NewsContent>
-        Published a paper in the <i>International Journal of Information Management Data Insights (<NewsLink href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">IJIM<ExternalLink size={14} /></NewsLink>)</i>.
       </NewsContent>
     </NewsItem>
   </TimelineContainer>
