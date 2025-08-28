@@ -346,6 +346,14 @@ const Home: React.FC = () => {
   <YearTitle>2025</YearTitle>
 
   <NewsItem>
+    <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>. (
+    <a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">
+      IJIM
+    </a>
+    )
+  </NewsItem>
+
+  <NewsItem>
     <span className="date">[May]</span> - Joined Brain Station 23 as a Software Engineer (AI/ML). (
     <a href="https://www.linkedin.com/company/brainstation-23/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
       Brain Station 23
@@ -354,20 +362,14 @@ const Home: React.FC = () => {
   </NewsItem> 
 
   <NewsItem>
-    <span className="date">[May]</span> - Two papers got accepted at ICITA. (
+    <span className="date">[May]</span> - Two papers got published at ICITA. (
     <a href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">
       ICITA 2024
     </a>
     )
   </NewsItem>
 
-  <NewsItem>
-    <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>. (
-    <a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">
-      IJIM
-    </a>
-    )
-  </NewsItem>
+
 
   {/* 2024 Events */}
   <YearTitle>2024</YearTitle>

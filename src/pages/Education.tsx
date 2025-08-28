@@ -270,7 +270,7 @@ const Education: React.FC = () => {
         </Duration>
         <CGPA>
           <Star size={18} />
-          CGPA: <b>3.563/4.00</b> scale (Ranked <b>40<sup>th</sup></b>)
+          CGPA: <b>3.563/4.00</b> scale (Ranked <b>39<sup>th</sup></b>)
         </CGPA>
         <Supervisor>
           <strong>Supervisor:</strong>{' '}
