@@ -247,7 +247,7 @@ const Sidebar: React.FC = () => {
       <SidebarContent>
         <ProfileSection>
           <ProfilePicture>
-            <img src="/images/profile.jpg" alt="Mukaffi Bin Moin" />
+            <img src="/images/profile.png" alt="Mukaffi Bin Moin" />
           </ProfilePicture>
           <Name>Mukaffi Bin Moin</Name>
           <Title>Researcher || LLMs & Multimodal</Title>
