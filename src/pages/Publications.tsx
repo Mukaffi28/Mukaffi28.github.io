@@ -520,7 +520,7 @@ const Publications: React.FC = () => {
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Busra Kamal Rafa, Swarnajit Saha, Md. Mahfuzur Rahman, Khan Md Hasib, and M. F. Mridha
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in International Journal of Disaster Risk Reduction (Q1)</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
+            <strong>Journal:</strong> <em>Accepted for publication in International Journal of Disaster Risk Reduction (Q1)</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 

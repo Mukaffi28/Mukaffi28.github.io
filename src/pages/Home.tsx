@@ -177,13 +177,13 @@ const EmailItem = styled.p`
   gap: 8px;
 
   a {
-    color: #7ab2d3;
+    color: #4A628A;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 
     &:hover {
-      color: #4a628a;
+      color: #4A628A;
       text-decoration: none;
     }
   }
@@ -328,11 +328,11 @@ const Home: React.FC = () => {
         </EmailTitle>
         <EmailItem>
           <Mail size={16} />
-          mukaffimoin28@gmail.com
+          <a href="mailto:mukaffimoin28@gmail.com">mukaffimoin28@gmail.com</a>
         </EmailItem>
         <EmailItem>
           <Mail size={16} />
-          mukaffi28@gmail.com
+          <a href="mailto:mukaffi28@gmail.com">mukaffi28@gmail.com</a>
         </EmailItem>
       </EmailSection>
 

@@ -329,6 +329,12 @@ const EmailItem = styled.p`
     margin-bottom: 0;
   }
   
+  a {
+    color: #4A628A;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
   @media (max-width: 768px) {
     font-size: 0.9rem; // Reduced font size for mobile
     margin-bottom: 0.6rem; // Reduced margin for mobile
@@ -366,12 +372,12 @@ const SocialLink = styled.a`
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #7AB2D3;
+  color:rgb(11, 103, 156);
   text-decoration: none;
   font-weight: 600;
   padding: 10px 16px;
   background: linear-gradient(135deg, #DFF2EB, #B9E5E8);
-  border: 1px solid #7AB2D3;
+  border: 1px solidrgb(0, 80, 126);
   border-radius: 12px;
   transition: all 0.3s ease;
   position: relative;
@@ -446,11 +452,11 @@ const CV: React.FC = () => {
           </SectionTitle>
           <EmailItem>
             <Mail size={16} />
-            mukaffimoin28@gmail.com
+            <a href="mailto:mukaffimoin28@gmail.com">mukaffimoin28@gmail.com</a>
           </EmailItem>
           <EmailItem>
             <Mail size={16} />
-            mukaffi28@gmail.com
+            <a href="mailto:mukaffi28@gmail.com">mukaffi28@gmail.com</a>
           </EmailItem>
         </EmailSection>
 

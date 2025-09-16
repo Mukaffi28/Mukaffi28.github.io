@@ -130,6 +130,11 @@ const ContactItem = styled.div`
     margin-left: 0.5rem;
   }
   
+  a {
+    color: #4A628A;
+    text-decoration: none;
+  }
+  
   @media (max-width: 768px) {
     font-size: 0.85rem; // Reduced font size for mobile
     margin-bottom: 0.4rem; // Reduced margin for mobile
@@ -159,8 +164,7 @@ const LinkItem = styled.a`
     color: #7AB2D3;
     background: linear-gradient(135deg, #DFF2EB, #B9E5E8);
     border-radius: 8px;
-    margin: 0.25rem 0;
-    padding: 0.75rem 1rem;
+    /* Prevent layout shift on hover by not changing margin or padding */
   }
   
   &:last-child {
@@ -172,8 +176,7 @@ const LinkItem = styled.a`
     font-size: 0.9rem; // Reduced font size for mobile
     
     &:hover {
-      padding: 0.6rem 0.8rem; // Reduced hover padding for mobile
-      margin: 0.2rem 0; // Reduced hover margin for mobile
+      /* Prevent layout shift on hover on mobile as well */
     }
   }
 `;
@@ -203,6 +206,11 @@ const SidebarContent = styled.div`
   @media (max-width: 768px) {
     padding: 1.5rem; // Reduced padding for mobile
   }
+`;
+
+const VisitorMapContainer = styled.div`
+  text-align: center;
+  margin-top: 1rem;
 `;
 
 type OrcidProps = {
@@ -250,7 +258,7 @@ const Sidebar: React.FC = () => {
             📍 <span>Dhaka, Bangladesh</span>
           </ContactItem>
           <ContactItem>
-            ✉️ <span>mukaffi28@gmail.com</span>
+            ✉️ <span><a href="mailto:mukaffi28@gmail.com">mukaffi28@gmail.com</a></span>
           </ContactItem>
         </ContactInfo>
         
@@ -285,11 +293,11 @@ const Sidebar: React.FC = () => {
           </LinkItem>
         </AcademicLinks>
         
-        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+        <VisitorMapContainer>
           <a href="https://clustrmaps.com/site/1c38a" title="ClustrMaps" target="_blank" rel="noopener noreferrer">
             <img src="https://www.clustrmaps.com/map_v2.png?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&cl=ffffff" width="200px" height="100px" alt="Visitor Map" />
           </a>
-        </div>
+        </VisitorMapContainer>
       </SidebarContent>
     </SidebarContainer>
   );
