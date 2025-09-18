@@ -175,17 +175,31 @@ const EmailItem = styled.p`
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 
   a {
     color: #4A628A;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 
     &:hover {
       color: #4A628A;
       text-decoration: none;
     }
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    gap: 6px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+    gap: 6px;
   }
 `;
 

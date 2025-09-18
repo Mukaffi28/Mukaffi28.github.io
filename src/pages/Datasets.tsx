@@ -51,12 +51,13 @@ const DatasetItem = styled.div`
     background: radial-gradient(circle at top right, rgba(122, 178, 211, 0.15), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none; /* Allow clicks to pass through overlay */
+    z-index: 0;
   }
   
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(122, 178, 211, 0.2);
-    border-color: #7AB2D3;
+ 
   }
   
   &:hover::before {
@@ -65,7 +66,7 @@ const DatasetItem = styled.div`
 `;
 
 const DatasetTitle = styled.h2`
-  color: #1e293b;
+  color:rgb(75, 106, 155);
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -73,7 +74,7 @@ const DatasetTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, #7AB2D3, #4A628A);
+  background: linear-gradient(135deg,rgb(73, 151, 196),rgb(34, 70, 133));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,30 +90,31 @@ const DatasetDescription = styled.p`
 `;
 
 const DatasetName = styled.span`
-  color: #7AB2D3;
+  
   font-weight: 700;
-  background: linear-gradient(135deg, #DFF2EB, #B9E5E8);
+  
   padding: 4px 8px;
   border-radius: 8px;
 `;
 
 const DatasetLink = styled.a`
-  color: #7AB2D3;
+  
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: linear-gradient(135deg, #7AB2D3, #4A628A);
+  background: linear-gradient(135deg, #4A628A);
   color: white;
   padding: 8px 16px;
   border-radius: 12px;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
   
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(122, 178, 211, 0.3);
     text-decoration: none;
   }
 `;

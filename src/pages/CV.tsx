@@ -324,6 +324,8 @@ const EmailItem = styled.p`
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
   
   &:last-child {
     margin-bottom: 0;
@@ -333,16 +335,18 @@ const EmailItem = styled.p`
     color: #4A628A;
     text-decoration: none;
     font-weight: 600;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   
   @media (max-width: 768px) {
-    font-size: 0.9rem; // Reduced font size for mobile
+    font-size: 0.95rem; // Slightly larger for readability on mobile
     margin-bottom: 0.6rem; // Reduced margin for mobile
     gap: 6px; // Reduced gap for mobile
   }
   
   @media (max-width: 480px) {
-    font-size: 0.85rem; // Further reduced font size for very small screens
+    font-size: 0.9rem; // Maintain readability on very small screens
     margin-bottom: 0.5rem; // Further reduced margin for very small screens
     gap: 5px; // Further reduced gap for very small screens
   }
