@@ -161,6 +161,25 @@ const News: React.FC = () => {
   <NewsItem>
       <NewsDate>
         <Calendar size={18} />
+        [September]
+      </NewsDate>
+      <NewsContent>
+        Two papers published in the 4th International Conference on Computing and Communication Networks (<NewsLink href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer">ICCCNet 2024 <ExternalLink size={14} /></NewsLink>).
+      </NewsContent>
+    </NewsItem>
+
+    <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
+        [September]
+      </NewsDate>
+      <NewsContent>
+        One paper published in the <i>International Journal of Disaster Risk Reduction</i> (<NewsLink href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer">Disaster Risk Reduction <ExternalLink size={14} /></NewsLink>).
+      </NewsContent>
+    </NewsItem>
+  <NewsItem>
+      <NewsDate>
+        <Calendar size={18} />
         [June]
       </NewsDate>
       <NewsContent>
@@ -184,9 +203,11 @@ const News: React.FC = () => {
         [May]
       </NewsDate>
       <NewsContent>
-        Had two papers published in ICITA. (<NewsLink href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">ICITA 2024 <ExternalLink size={14} /></NewsLink>)
+        Two papers published in ICITA. (<NewsLink href="https://www.icita.world/#/" target="_blank" rel="noopener noreferrer">ICITA 2024 <ExternalLink size={14} /></NewsLink>)
       </NewsContent>
     </NewsItem>
+
+
   </TimelineContainer>
 </YearSection>
 

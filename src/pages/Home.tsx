@@ -348,6 +348,10 @@ const Home: React.FC = () => {
           <Mail size={16} />
           <a href="mailto:mukaffi28@gmail.com">mukaffi28@gmail.com</a>
         </EmailItem>
+        <EmailItem>
+          <Mail size={16} />
+          <a href="mailto:mukaffi.binmoin@brainstation-23.com">mukaffi.binmoin@brainstation-23.com</a>
+        </EmailItem>
       </EmailSection>
 
 <NewsSection>
@@ -359,6 +363,23 @@ const Home: React.FC = () => {
   {/* 2025 Events */}
   <YearTitle>2025</YearTitle>
 
+
+  <NewsItem>
+    <span className="date">[September]</span> - Two papers got published in the 4th International Conference on Computing and Communication Networks (
+    <a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer">
+      ICCCNet 2024
+    </a>
+    ).
+  </NewsItem>
+
+  <NewsItem>
+    <span className="date">[September]</span> - One paper got published in the <i>International Journal of Disaster Risk Reduction</i>. (
+    <a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer">
+      Disaster Risk Reduction
+    </a>
+    )
+  </NewsItem>
+  
   <NewsItem>
     <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>. (
     <a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">
@@ -385,6 +406,8 @@ const Home: React.FC = () => {
 
 
 
+
+
   {/* 2024 Events */}
   <YearTitle>2024</YearTitle>
 
@@ -403,6 +426,7 @@ const Home: React.FC = () => {
     </a>
     ).
   </NewsItem>
+
 
   <NewsItem>
     <span className="date">[October]</span> - Attended the 18th International Conference on Information Technology and Applications and presented two papers. (
