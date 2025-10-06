@@ -86,13 +86,11 @@ const JobItem = styled.div`
   }
   
   &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(122, 178, 211, 0.2);
     border-color: #7AB2D3;
   }
   
   &:hover::before {
-    transform: scaleY(1);
+    transform: none;
   }
 `;
 
@@ -125,7 +123,6 @@ const CompanyLink = styled.a`
   &:hover {
     color: #4A628A;
     text-decoration: none;
-    transform: translateY(-1px);
   }
 `;
 
@@ -161,8 +158,6 @@ const JobDescriptionItem = styled.li`
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(122, 178, 211, 0.15);
     border-color: #7AB2D3;
   }
   
@@ -194,13 +189,22 @@ const ContentCard = styled.div`
   
   &:hover {
     border-color: #7AB2D3;
-    box-shadow: 0 4px 15px rgba(122, 178, 211, 0.1);
   }
   
   strong {
     color: #4A628A;
     font-weight: 600;
   }
+`;
+
+const BulletList = styled.ul`
+  margin: 0.6rem 0 0 1.2rem;
+  padding: 0;
+  list-style-type: disc;
+`;
+
+const BulletItem = styled.li`
+  margin-bottom: 0.6rem;
 `;
 
 const TechnologyCard = styled.div`
@@ -211,19 +215,8 @@ const TechnologyCard = styled.div`
   transition: all 0.3s ease;
   position: relative;
   
-  &::before {
-    content: '⚙️';
-    position: absolute;
-    top: 0.8rem;
-    right: 1rem;
-    font-size: 1.2rem;
-    opacity: 0.7;
-  }
-  
   &:hover {
     border-color: #4A628A;
-    box-shadow: 0 4px 15px rgba(122, 178, 211, 0.15);
-    transform: translateY(-1px);
   }
   
   strong {
@@ -261,40 +254,59 @@ const Work: React.FC = () => {
           <JobDescription>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>Multilingual Text-to-Speech System:</strong> Trained a custom end-to-end multilingual Text-to-Speech system from scratch on Bangla CommonVoice corpus, implementing dataset preprocessing, multi-speaker conditioning, and phoneme handling to enhance prosody and clarity. Designed efficient training pipelines leveraging GPU parallelism and performed systematic evaluation of pronunciation accuracy, speaker similarity, and intelligibility to ensure naturalness and robustness in generated speech.
+                <strong>Agentic Footfall Monitoring and Analytics Platform</strong>
+                <BulletList>
+                  <BulletItem>Led a real-time footfall analytics platform using agentic multi‑VLM architecture (GPT‑4, Gemini, Qwen‑2.5, BLIP‑2) for autonomous perception and reasoning across multi‑camera environments.</BulletItem>
+                  <BulletItem>Integrated YOLOv11 and ByteTrack for detection and tracking, enabling accurate multi‑camera identity association with temporal consistency.</BulletItem>
+                  <BulletItem>Applied Tree‑of‑Thought prompting for collaborative ambiguity resolution, crowd dynamics interpretation, and coherent contextual insights.</BulletItem>
+                  <BulletItem>Implemented hybrid identity matching with visual (ReID) and semantic (text) embeddings for better cross‑frame and cross‑camera consistency.</BulletItem>
+                  <BulletItem>Introduced an LLM‑based verification layer to confirm/reject matches, reducing false positives and improving re‑identification reliability.</BulletItem>
+                  <BulletItem>Optimized embedding pipeline and similarity search via adaptive thresholds and intelligent LLM bypass for low‑latency scalability.</BulletItem>
+                  <BulletItem>Achieved 0.962 re‑identification accuracy using a VLM‑centric approach vs. 0.829 with traditional ReID.</BulletItem>
+                  <BulletItem>Built a React visualization interface supporting text, image, and hybrid similarity search for intuitive analytics.</BulletItem>
+                  <BulletItem>Engineered temporal–spatial analytics generating natural‑language summaries of entries/exits, occupancy, and movement trends.</BulletItem>
+                  <BulletItem>Led architecture, scalability planning, deployment strategy, and mentored junior developers for a modular, production‑grade system.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
-                <strong>Technology used:</strong> Orpheus, XTTS v2, PyTorch, Librosa, CommonVoice, NCCL, SoundFile
+                <strong>Technology used:</strong> GPT-4, Gemini, Qwen-2.5, Tree-of-Thought Prompting, Multi-Agent Reasoning, Vector DB, Temporal-Spatial Analytics, YOLO11, ByteTrack
               </TechnologyCard>
             </JobDescriptionItem>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>Real-time Workplace Analytics:</strong> Developed a real-time workplace analytics solution using multi-camera input, YOLOv11 for detection, ByteTrack for tracking, and Qwen‑2.5 for vision-language analysis. The system classifies individuals as active or idle, generates concise natural language activity summaries, and logs timestamped activity reports. Features include desk time tracking, effective work vs. idle period measurement, meeting hour estimation, collaboration intensity mapping, and stress-level detection through behavioral analysis.
+                <strong>Bangla Text-to-Speech (TTS)</strong>
+                <BulletList>
+                  <BulletItem>Developed a Bangla TTS system from scratch using an in‑house multi‑speaker corpus.</BulletItem>
+                  <BulletItem>Preprocessed/curated data: text normalization, phoneme extraction, and audio alignment.</BulletItem>
+                  <BulletItem>Implemented multi‑speaker conditioning and phoneme‑level modeling for clarity and differentiation.</BulletItem>
+                  <BulletItem>Enhanced prosody for expressive, human‑like intonation and naturalness.</BulletItem>
+                  <BulletItem>Designed GPU‑parallel training pipelines with PyTorch and NCCL for scalable efficiency.</BulletItem>
+                  <BulletItem>Evaluated pronunciation accuracy, speaker similarity, and intelligibility for robustness.</BulletItem>
+                  <BulletItem>Built a scalable architecture for large datasets and multiple speakers.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
-                <strong>Technology used:</strong> YOLOv11, ByteTrack, Chain-of-Thought Prompting, Qwen‑2.5, BLIP‑2, OpenCV, Python, Flask, Temporal-Spatial Analytics, CSV Logging
+                <strong>Technology used:</strong> xTTSv2, Orpheus, PyTorch, NCCL, CUDA, Speech Processing Libraries, Phoneme Modeling, Multi-Speaker TTS Techniques
               </TechnologyCard>
             </JobDescriptionItem>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>Cafeteria Monitoring System:</strong> Developed a vision-based cafeteria monitoring system that tracks real-time entry/exit counts, in-zone occupancy, and seating duration using multi-camera input. The system enables footfall analysis, peak hour detection, and capacity estimation, enhancing space utilization and service flow. Future-ready features like queue wait time estimation, role-based detection, and occupancy alerts are integrated into the design for scalable deployment.
+                <strong>BS23 Workplace Monitoring & Analytics Platform</strong>
+                <BulletList>
+                  <BulletItem>Built a real‑time workplace/desk monitoring platform with multi‑camera input.</BulletItem>
+                  <BulletItem>Integrated YOLOv11 for detection and ByteTrack/DeepSORT for tracking.</BulletItem>
+                  <BulletItem>Used Qwen‑2.5/BLIP‑2 for vision‑language analysis and activity classification (active vs idle).</BulletItem>
+                  <BulletItem>Monitored occupancy, entries/exits, seating duration, and meeting participation using non‑intrusive signals.</BulletItem>
+                  <BulletItem>Implemented privacy‑conscious, consistent ID tracking without facial recognition.</BulletItem>
+                  <BulletItem>Generated timestamped NL summaries, logs, and visual playback for productivity insights.</BulletItem>
+                  <BulletItem>Added collaboration intensity mapping, stress estimation, and temporal‑spatial analytics.</BulletItem>
+                  <BulletItem>Designed for scalability: queue wait times, role‑based detection, peak hours, occupancy alerts.</BulletItem>
+                  <BulletItem>Delivered full‑stack solution with Python (FastAPI), OpenCV, CSV logging, and AI/ML models.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
-                <strong>Technology used:</strong> YOLOv8, DeepSORT, OpenCV, Python, Flask, Zone Mapping, Temporal-Spatial Analytics, CSV Logging
+                <strong>Technology used:</strong> YOLOv11, ByteTrack, DeepSORT, Qwen-2.5, BLIP-2, Chain-of-Thought Prompting, OpenCV, Python, FastAPI, Temporal-Spatial Analytics, Zone Mapping, CSV Logging
               </TechnologyCard>
-            </JobDescriptionItem>
-            <JobDescriptionItem>
-              <ContentCard>
-                <strong>Group Identification System:</strong> Developed a robust group identification system by integrating YOLOv11 for detection, ByteTrack for tracking, and OSNet for ReID to infer social groups based on proximity, trajectory similarity, zone co-occurrence, and behavioral sync. Evaluated clustering methods (DBSCAN, Agglomerative) and vision-language models (GPT-4o, SmolVLM) to enhance semantic group reasoning for applications in surveillance and retail behavior analysis.
-              </ContentCard>
-              <TechnologyCard>
-                <strong>Technology used:</strong> YOLOv11, ByteTrack, OSNet, TorchreID, DBSCAN, Agglomerative Clustering, GPT-4o, Smol‑VLM, OpenCV, Python
-              </TechnologyCard>
-            </JobDescriptionItem>
-            <JobDescriptionItem>
-              <ContentCard>
-                <strong>Computer Vision PoCs:</strong> Conducted multiple PoCs in computer vision, focusing on re-identification, footfall analysis, and image generation to validate feasibility, assess performance, and inform scalable solution design.
-              </ContentCard>
             </JobDescriptionItem>
           </JobDescription>
         </JobItem>
@@ -318,12 +330,12 @@ const Work: React.FC = () => {
           <JobDescription>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>Team Leadership:</strong> Served as the Team Lead of the AI team, overseeing full-cycle project development, managing workflows, and ensuring the timely delivery of high-quality outputs. Also provided technical mentorship, encouraged knowledge sharing, and maintained strong performance standards across the team.
-              </ContentCard>
-            </JobDescriptionItem>
-            <JobDescriptionItem>
-              <ContentCard>
-                <strong>Intelligent Gift Shop Chatbot:</strong> Developed an intelligent chatbot for gift shops to provide personalized gift recommendations and real-time product queries using Retrieval Augmented Generation (RAG). The solution integrates GPT-4, ChromaDB, and LangChain with a ReactJS interface and FastAPI backend to enhance customer engagement and streamline operations.
+                <strong>Gift Shop Intelligent Chatbot</strong>
+                <BulletList>
+                  <BulletItem>Developed a chatbot for personalized gift recommendations and real‑time queries using RAG.</BulletItem>
+                  <BulletItem>Integrated GPT‑4, ChromaDB, and LangChain with ReactJS frontend and FastAPI backend.</BulletItem>
+                  <BulletItem>Enabled retrieval of product info and tailored suggestions to boost engagement and sales.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
                 <strong>Technology used:</strong> GPT-4, RAG, FastAPI, LangChain, ChromaDB, OpenAI Embeddings, ReactJS
@@ -331,7 +343,12 @@ const Work: React.FC = () => {
             </JobDescriptionItem>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>ANTT AI Bot:</strong> Designed ANTT AI bot, a chatbot using fine-tuned Large Language Models (GPT-3.5, GPT-4o, and LLaMA-2) to generate code for Arduino, ESP32, and Raspberry Pi. It simplifies embedded systems programming by producing platform-specific code for tasks like sensor interfacing and actuator control, and has been tested on real hardware.
+                <strong>ANTT AI Bot</strong>
+                <BulletList>
+                  <BulletItem>Designed a chatbot using fine‑tuned LLMs (GPT‑3.5, GPT‑4o, LLaMA‑2) to generate platform‑specific code.</BulletItem>
+                  <BulletItem>Produced code for Arduino, ESP32, and Raspberry Pi covering sensors, actuators, and device comms.</BulletItem>
+                  <BulletItem>Validated on real hardware to ensure reliability and correctness.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
                 <strong>Technology used:</strong> Prompt Engineering, LangChain, Python, GPT-3.5, GPT-4o, LLaMA-2
@@ -339,7 +356,14 @@ const Work: React.FC = () => {
             </JobDescriptionItem>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>Predictive Maintenance System:</strong> Developed a Predictive Maintenance web and mobile app for appliances, using time series and boosting models for real-time health monitoring. The system adapts by retraining models weekly with new data, provides real-time updates on key metrics like temperature, vibration, and energy use, and tracks shock events. Deployed on AWS EC2 and integrated with FastAPI, it optimizes appliance performance and reliability.
+                <strong>Predictive Maintenance Platform for Appliances</strong>
+                <BulletList>
+                  <BulletItem>Built web/mobile predictive maintenance with time series and boosting models.</BulletItem>
+                  <BulletItem>Implemented weekly retraining with new operational data for adaptive learning.</BulletItem>
+                  <BulletItem>Streamed real‑time metrics: temperature, vibration, energy usage, shock events.</BulletItem>
+                  <BulletItem>Deployed on AWS EC2 with FastAPI backend for scalable device monitoring.</BulletItem>
+                  <BulletItem>Managed end‑to‑end delivery; mentored the AI team and ensured timelines/quality.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
                 <strong>Technology used:</strong> Python, Multiple Time Series Models, Boosting Algorithms, AWS EC2, Adaptive Learning Techniques, FastAPI, Data Analysis Tools
@@ -347,7 +371,12 @@ const Work: React.FC = () => {
             </JobDescriptionItem>
             <JobDescriptionItem>
               <ContentCard>
-                <strong>ANPR and Dynamic Toll Pricing:</strong> Developed a real-time ANPR and dynamic toll pricing system using YOLOv8 and OCR. It detects vehicle plates, calculates tolls based on vehicle type, time, and traffic, and is deployed on cloud infrastructure. The solution includes high-definition cameras and a user-friendly interface, optimizing toll collection efficiency.
+                <strong>Real-Time ANPR and Dynamic Toll Pricing System</strong>
+                <BulletList>
+                  <BulletItem>Developed real‑time ANPR and dynamic toll pricing with YOLOv8 and OCR.</BulletItem>
+                  <BulletItem>Calculated tolls by vehicle type, time, and traffic; deployed on cloud infra.</BulletItem>
+                  <BulletItem>Integrated HD cameras and a user‑friendly UI to improve efficiency and reduce manual work.</BulletItem>
+                </BulletList>
               </ContentCard>
               <TechnologyCard>
                 <strong>Technology used:</strong> Python, YOLOv8, OpenCV, Supervision, FastAPI, Ultralytics, PyQt5, ByteTrack

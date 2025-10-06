@@ -419,14 +419,54 @@ const Publications: React.FC = () => {
             </PublicationLink>
             <PublicationButton 
               className="citation"
-              onClick={() => openModal('citation', 'MultiBanFakeDetect', '@article{faria2025multibanfakedetect,\n  title={MultiBanFakeDetect: Integrating advanced fusion techniques for multimodal detection of Bangla fake news in under-resourced contexts},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and Hasan, Zayeed and Khandaker, Md Arafat Alam and Islam, Niful and Hasib, Khan Md and Mridha, MF},\n  journal={International Journal of Information Management Data Insights},\n volume={5},\n number={2},\n  pages={100347},\n  year={2025},\n publisher={Elsevier}\n}')}
+              onClick={() => openModal('citation', 'MultiBanFakeDetect', '@article{MultiBanFakeDetect,\n  title={MultiBanFakeDetect: Integrating advanced fusion techniques for multimodal detection of Bangla fake news in under-resourced contexts},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and Hasan, Zayeed and Khandaker, Md Arafat Alam and Islam, Niful and Hasib, Khan Md and Mridha, MF},\n  journal={International Journal of Information Management Data Insights},\n volume={5},\n number={2},\n  pages={100347},\n  year={2025},\n publisher={Elsevier}\n}')}
             >
               <Quote size={16} />
               Citation bib
             </PublicationButton>
           </PublicationLinks>
         </PublicationItem>
-
+        <PublicationItem>
+          <PublicationTitle>
+              BanglaCalamityMMD: A Comprehensive Benchmark Dataset for Multimodal Disaster Identification in the Low-Resource Bangla Language
+            <StatusBadge className="published">Q1 Journal</StatusBadge>
+          </PublicationTitle>
+          <PublicationAuthors>
+            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Busra Kamal Rafa, Swarnajit Saha, Md. Mahfuzur Rahman, Khan Md Hasib, and M. F. Mridha
+          </PublicationAuthors>
+          <PublicationVenue>
+            <strong>Journal:</strong> <em>Published in  International Journal of Disaster Risk Reduction (Q1)</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
+          </PublicationVenue>
+          <PublicationLinks>
+            <PublicationButton 
+              className="abstract"
+              onClick={() => openModal('abstract', 'BanglaCalamityMMD', 'The abundance of social media datasets with crisis messages has greatly impacted disaster response and assessment. Extracting vital information from this data is crucial for enhancing situational awareness and enabling rapid decision-making, necessitating robust techniques to filter out misleading and irrelevant content. This study introduces a hybrid multimodal fusion technique that integrates text and image data to identify relevant disaster-related images from social media. It represents a pioneering effort in multimodal disaster identification for the Bangla language, addressing a significant gap where previous research has focused exclusively on English text. To facilitate this leap, We curated the “BanglaCalamityMMD” dataset, which includes 7,903 data points distributed across seven disaster categories such as Earthquake, Flood, Landslides, Wildfires, Tropical Storms, Droughts, and Human Damage, along with a non-disaster category. Our technique employs advanced deep learning methodologies: DisasterTextNet for text-based disaster detection, DisasterImageNet for image-based disaster categorization, and DisasterMultiFusionNet, which combines text and image modalities using fusion techniques like Early Fusion, Late Fusion, and Intermediate Fusion. The system uses Vision Transformer variations to extract visual data and pre-trained BERT models for textual insights. Our multimodal architecture (DisasterMultiFusionNet) significantly outperforms unimodal approaches. The unimodal text-based approach achieves 79.90% accuracy with mBERT, also the image-based approach reaches 78.65% accuracy using Swin Transformer. In comparison, our multimodal technique achieves 85.25% accuracy with Swin Transformer and mBERT (DisasterMultiFusionNet), showing a 5.35% improvement over the best unimodal approach. This highlights the effectiveness of our fusion technique and the reliability of our multimodal framework in enhancing disaster identification accuracy. To our knowledge, this is the first research on multimodal disaster identification in the low-resource Bangla language context.')}
+            >
+              <Eye size={16} />
+              Abstract
+            </PublicationButton>
+            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
+              <FileText size={16} />
+              PDF
+            </PublicationLink>
+            <PublicationLink className="code" href="https://github.com/Mukaffi28/BanglaCalamityMMD-A-Comprehensive-Benchmark-Dataset-for-Multimodal-Disaster-Identification" target="_blank" rel="noopener noreferrer">
+              <Code size={16} />
+              Code
+            </PublicationLink>
+            <PublicationLink className="dataset" href="https://data.mendeley.com/datasets/7dggbjn5sd/1" target="_blank" rel="noopener noreferrer">
+              <Database size={16} />
+              Dataset
+            </PublicationLink>
+            <PublicationButton 
+              className="citation"
+              onClick={() => openModal('citation', 'BanglaCalamityMMD', '@article{BanglaCalamityMMD,\n  title={BanglaCalamityMMD: A comprehensive benchmark dataset for multimodal disaster identification in the low-resource Bangla language},\n  author={Faria, Fatema Tuj Johora and Moin, Mukaffi Bin and Rafa, Busra Kamal and Saha, Swarnajit and Rahman, Md Mahfuzur and Hasib, Khan Md and Mridha, MF},\n  journal={International Journal of Disaster Risk Reduction},\n  volume={130},\n  pages={105800},\n  year={2025},\n  issn={2212-4209},\n  doi={https://doi.org/10.1016/j.ijdrr.2025.105800},\n  url={https://www.sciencedirect.com/science/article/pii/S2212420925006247},\n  keywords={Multimodal disaster identification, Bangla language, Low-resource, Social media, Text and image fusion, Deep learning, Disaster analysis}\n}')}
+            >
+              <Quote size={16} />
+              Citation bib
+            </PublicationButton>
+          </PublicationLinks>
+        </PublicationItem>
+        
         <PublicationItem>
           <PublicationTitle>
               MindSpeak-Bangla: A HumanLLM Collaborative Dataset for Chain-of-Thought Adaptation in Bangla Mental Health Advice Generation
@@ -511,46 +551,7 @@ const Publications: React.FC = () => {
       </YearSection>
       <YearSection>
         <YearTitle>2024</YearTitle>
-        <PublicationItem>
-          <PublicationTitle>
-              BanglaCalamityMMD: A Comprehensive Benchmark Dataset for Multimodal Disaster Identification in the Low-Resource Bangla Language
-            <StatusBadge className="published">Q1 Journal</StatusBadge><StatusBadge className="under-review">Under Review</StatusBadge>
-          </PublicationTitle>
-          <PublicationAuthors>
-            <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Busra Kamal Rafa, Swarnajit Saha, Md. Mahfuzur Rahman, Khan Md Hasib, and M. F. Mridha
-          </PublicationAuthors>
-          <PublicationVenue>
-            <strong>Journal:</strong> <em>Accepted for publication in International Journal of Disaster Risk Reduction (Q1)</em> (<a href="https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Disaster Risk Reduction</a>)
-          </PublicationVenue>
-          <PublicationLinks>
-            <PublicationButton 
-              className="abstract"
-              onClick={() => openModal('abstract', 'BanglaCalamityMMD', 'Not published yet')}
-            >
-              <Eye size={16} />
-              Abstract
-            </PublicationButton>
-            <PublicationLink className='pdf' href="#" target="_blank" rel="noopener noreferrer">
-              <FileText size={16} />
-              PDF
-            </PublicationLink>
-            <PublicationLink className="code" href="https://github.com/Mukaffi28/BanglaCalamityMMD-A-Comprehensive-Benchmark-Dataset-for-Multimodal-Disaster-Identification" target="_blank" rel="noopener noreferrer">
-              <Code size={16} />
-              Code
-            </PublicationLink>
-            <PublicationLink className="dataset" href="https://data.mendeley.com/datasets/7dggbjn5sd/1" target="_blank" rel="noopener noreferrer">
-              <Database size={16} />
-              Dataset
-            </PublicationLink>
-            <PublicationButton 
-              className="citation"
-              onClick={() => openModal('citation', 'BanglaCalamityMMD', 'Not published yet')}
-            >
-              <Quote size={16} />
-              Citation bib
-            </PublicationButton>
-          </PublicationLinks>
-        </PublicationItem>
+      
         <PublicationItem>
           <PublicationTitle>
               Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language
@@ -560,7 +561,7 @@ const Publications: React.FC = () => {
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Ahmed Al Wase, Mehidi Ahmmed, Md Rabius Sani, and Tashreef Muhammad.
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Journal:</strong> <em>Under Review in Array (Q1)</em> (<a href="https://www.sciencedirect.com/journal/array" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Neural Computing and Applications</a>)
+            <strong>Journal:</strong> <em>Under Review in Array (Q1)</em> (<a href="https://www.sciencedirect.com/journal/array" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>Array</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
@@ -717,13 +718,13 @@ const Publications: React.FC = () => {
         <PublicationItem>
           <PublicationTitle>
               Unraveling the Dominance of Large Language Models Over Transformer Models for Bangla Natural Language Inference: A Comprehensive Study
-            <StatusBadge className="accepted">Accepted</StatusBadge>
+           
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> Fatema Tuj Johora Faria, <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Asif Iftekher Fahim, Pronay Debnath, Faisal Muhammad Shah
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Conference:</strong> <em>Presented in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em> (<a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>ICCCNet 2024</a>)
+            <strong>Conference:</strong> <em>Published in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em> (<a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>ICCCNet 2024</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
@@ -758,13 +759,13 @@ const Publications: React.FC = () => {
         <PublicationItem>
           <PublicationTitle>
               Exploring Explainable AI Techniques for Improved Interpretability in Lung and Colon Cancer Classification
-              <StatusBadge className="accepted">Accepted</StatusBadge>
+              
           </PublicationTitle>
           <PublicationAuthors>
             <strong>Authors:</strong> <strong style={{color: '#10b981'}}>Mukaffi Bin Moin</strong>, Fatema Tuj Johora Faria, Swarnajit Saha, Busra Kamal Rafa, Mohammad Shafiul Alam
           </PublicationAuthors>
           <PublicationVenue>
-            <strong>Conference:</strong> <em>Presented in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em> (<a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>ICCCNet 2024</a>)
+            <strong>Conference:</strong> <em>Published in 4th International Conference on Computing and Communication Networks (ICCCNet-2024)</em> (<a href="https://icccn.co.uk/" target="_blank" rel="noopener noreferrer" style={{color: '#3b82f6'}}>ICCCNet 2024</a>)
           </PublicationVenue>
           <PublicationLinks>
             <PublicationButton 
