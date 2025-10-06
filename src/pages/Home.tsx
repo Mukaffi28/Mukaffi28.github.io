@@ -192,6 +192,12 @@ const EmailItem = styled.p`
     }
   }
   
+  em {
+    color:rgb(211, 128, 122);
+    font-style: normal;
+    font-weight: 600;
+  }
+  
   @media (max-width: 768px) {
     font-size: 1rem;
     gap: 6px;
@@ -350,7 +356,7 @@ const Home: React.FC = () => {
         </EmailItem>
         <EmailItem>
           <Mail size={16} />
-          <a href="mailto:mukaffi.binmoin@brainstation-23.com">mukaffi.binmoin@brainstation-23.com</a>
+          <a href="mailto:mukaffi.binmoin@brainstation-23.com">mukaffi.binmoin@brainstation-23.com</a> <em>(Official)</em>
         </EmailItem>
       </EmailSection>
 
@@ -379,7 +385,7 @@ const Home: React.FC = () => {
     </a>
     )
   </NewsItem>
-  
+
   <NewsItem>
     <span className="date">[June]</span> - One paper got published in the <i>International Journal of Information Management Data Insights</i>. (
     <a href="https://www.sciencedirect.com/journal/international-journal-of-information-management-data-insights" target="_blank" rel="noopener noreferrer">

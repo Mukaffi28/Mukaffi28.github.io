@@ -430,7 +430,7 @@ const CV: React.FC = () => {
         <DownloadText>
           You can download a PDF copy of my CV here. The document contains my complete professional background, including education, work experience, and technical skills.
         </DownloadText>
-        <DownloadLink href="/files/CV/CV_of_Mukaffi_Bin_Moin.pdf" target="_blank" rel="noopener noreferrer">
+        <DownloadLink href="/files/CV/CV_of_Mukaffi%20Bin%20Moin.pdf" download target="_blank" rel="noopener noreferrer">
           <Download size={18} />
           Download CV
         </DownloadLink>
@@ -438,7 +438,7 @@ const CV: React.FC = () => {
 
       
         <object
-        data="https://drive.google.com/file/d/1CmqovcmAn0RVxqMSxnoCRQOLsJH3xNtL/view?usp=sharing"
+        data="https://drive.google.com/file/d/1CmqovcmAn0RVxqMSxnoCRQOLsJH3xNtL/preview" 
         type="application/pdf"
         width="100%"
         height="800px"
