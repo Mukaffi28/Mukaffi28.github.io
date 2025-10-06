@@ -438,7 +438,7 @@ const CV: React.FC = () => {
 
       
         <object
-        data="https://drive.google.com/file/d/1pmQD5RJDLDDr9ldif7ksK_sYS61ELpPI/preview"
+        data="https://drive.google.com/file/d/1CmqovcmAn0RVxqMSxnoCRQOLsJH3xNtL/view?usp=sharing"
         type="application/pdf"
         width="100%"
         height="800px"
